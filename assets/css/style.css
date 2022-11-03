@@ -626,3 +626,9 @@ span.dark-yellow{
     background: #383085 !important;
     color: white;
 }
+li.nav-link.nav-item.dropdown.show a.dropdown-toggle {
+    background: #383085;
+}
+.dropdown-menu.show {
+    top: 50px;
+}
