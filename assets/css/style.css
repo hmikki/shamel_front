@@ -577,6 +577,9 @@ span.dark-yellow{
     bottom: 0;
     right: 25px;
 }
+.chatboot-icon:hover, .chatboot-icon:active{
+    cursor: pointer;
+}
 .show{
     display: block !important;
 }
