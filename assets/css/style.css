@@ -626,9 +626,147 @@ span.dark-yellow{
     background: #383085 !important;
     color: white;
 }
-li.nav-link.nav-item.dropdown.show a.dropdown-toggle {
+li.nav-link.nav-item.dropdown.user_tab.show a.dropdown-toggle {
     background: #383085;
 }
 .dropdown-menu.show {
     top: 50px;
+}
+.notifications, .messages{
+    display: inline;
+    float: right;
+    text-align: left;
+    width: 25%;
+}
+.user_tab{
+    display: inline;
+    float: left;
+}
+.notifications .dropdown-menu, .messages .dropdown-menu{
+    width: 350px;
+    height: auto;
+    max-height: 80vh;
+    overflow-y: scroll;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 30px rgb(0 0 0 / 8%);
+    border-radius: 16px;
+}
+.notifications .dropdown-menu a, .messages .dropdown-menu a{
+    width: 320px;
+    height: auto;
+    background: #F8F8F8;
+    border-radius: 11px;
+    margin: 10px;
+}
+.notifications .dropdown-menu a p, .messages .dropdown-menu a p{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+    text-align: right;
+    letter-spacing: 0.0703846px;
+    color: #606E7D;
+    white-space: initial;
+}
+.dropdown-item{
+    padding: 1.5rem 1.5rem;
+}
+.messages_search{
+    height: 50px;
+    background: #F8F8F8;
+    border-radius: 11px;
+}
+.dropdown-item.active, .dropdown-item:active{
+    background: none !important;
+}
+input.form-control.messages_search.fa::placeholder{
+    color: #B5BEC8;
+}
+.messages .dropdown-item p{
+    width: 30%;
+    padding-top: 10px;
+    color: #606E7D;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.0703846px;
+    white-space: initial;
+}
+.messages .dropdown-item img{
+    width: 20%;
+}
+.messages .dropdown-item h6{
+    width: 50%;
+    white-space: initial;
+    padding-right: 15px;
+}
+.attachments{
+    list-style: none;
+    padding-top: 15px;
+    margin-bottom: 0;
+}
+.attachments li{
+    display: inline;
+    padding: 5px;
+    margin-left: 10px;
+    width: 90px;
+    height: 30px;
+    background: #EEEEEE;
+    border-radius: 20px;
+}
+.green{
+    color: #47D697;
+}
+#chatDropdown .dropdown-item{
+    background: white;
+}
+#chatDropdown .dropdown-item img{
+    width: 30px;
+    height: 35px;
+}
+#chatDropdown .dropdown-item h6{
+    border-radius: 0px 23px 23px 23px;
+    color: #606E7D;
+    width: 80%;
+    padding: 15px;
+}
+#chatDropdown .dropdown-item .user_chat h6{
+
+    background: #F8F8F8;
+}
+#chatDropdown .dropdown-item .chater h6{
+    background: #272265;
+    color: white;
+}
+#chatDropdown .row{
+    max-width: 350px;
+}
+.user_chat img{
+    float: left;
+}
+.user_chat h6{
+    float: right;
+}
+.chater img{
+    float: right;
+}
+.chater h6{
+    float: left;
+}
+.sendbox{
+    position: absolute;
+    left: 47.58%;
+    right: 4.4%;
+    bottom: 0;
+    width: 350px;
+    height: 85px;
+    background: #FFFFFF;
+    box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 0px 0px 16px 16px;
+}
+.sendbox form input[type="text"]{
+    height: 85px;
+    width: 100%;
+}
+.content_messages{
+    overflow-y: scroll;
 }
