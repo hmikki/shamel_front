@@ -770,3 +770,72 @@ input.form-control.messages_search.fa::placeholder{
 .content_messages{
     overflow-y: scroll;
 }
+.search_area{
+    width: 100%;
+    height: 120px;
+    background: rgba(255, 255, 255, 0.77);
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(100px);
+    border-radius: 18px;
+}
+.search_area input[type="search"]{
+    background: #F8F8F8;
+    border-radius: 11px;
+    height: 50px;
+    width: 500px;
+}
+.sidebar{
+    background: #F8F8F8;
+    border-radius: 11px;
+}
+#mySidebar a, #mySidebar button{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    color: #272265;
+    outline: none;
+    border: none;
+}
+#mySidebar a.text-right:hover, #mySidebar a.text-right:active{
+    text-decoration: none;
+}
+.dropdown-container {
+    display: none;
+    margin-right: 20px;
+    background: white;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+}
+
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: unset;
+}
+ul.breadcrumb li {
+    display: inline;
+    font-size: 14px;
+}
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+ul.breadcrumb li a {
+    color: #B5BEC8;
+    text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
