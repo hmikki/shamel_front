@@ -753,18 +753,18 @@ input.form-control.messages_search.fa::placeholder{
     float: left;
 }
 .sendbox{
-    position: absolute;
-    left: 47.58%;
-    right: 4.4%;
-    bottom: 0;
-    width: 350px;
-    height: 85px;
+    /*position: absolute;*/
+    /*left: 47.58%;*/
+    /*right: 4.4%;*/
+    /*bottom: 0;*/
+    /*width: 350px;*/
+    /*height: 85px;*/
     background: #FFFFFF;
     box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.08);
     border-radius: 0px 0px 16px 16px;
 }
 .sendbox form input[type="text"]{
-    height: 85px;
+    height: 95px;
     width: 100%;
 }
 .content_messages{
