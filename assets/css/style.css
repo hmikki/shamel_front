@@ -912,4 +912,10 @@ ul.breadcrumb li a:hover {
 }
 .service-item_order{
     margin: 15px;
+    max-width: 33%;
+}
+.mutliselect{
+    background: #F8F8F8;
+    border-radius: 11px;
+    padding: 10px 15px;
 }

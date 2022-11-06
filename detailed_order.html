@@ -349,7 +349,7 @@
         </div>
         <div class="row">
             <div class="service-item_order text-right">
-                <form class="p-3" method="" action="">
+                <form class="p-3" method="" action="" style="height: 1000px">
                     <h5 class="text-center">اسم خدمة افتراضية</h5>
                     <div class="form-group">
                         <label for="address">العنوان</label>
@@ -366,13 +366,53 @@
                             </svg>
                         </p>
                     </div>
-                    <div class="form-group">
-                        <label for="category" class="w-50 float-right">الصنف</label>
-                        <input type="text" class="form-control w-50 float-left bg-light" id="category">
+                    <div class="form-group mb-5">
+                        <label class="">صلابة الحديد</label>
+                        <div class="mutliselect_group">
+                            <input type="checkbox" id="multiselect1" class="form-control bg-light" name="iron" value="1" hidden>
+                            <span class="mutliselect" onclick="document.getElementById('multiselect1').click()">40 ملم</span>
+                            <input type="checkbox" id="multiselect2" class="form-control bg-light" name="iron" value="1" hidden>
+                            <span class="mutliselect" onclick="document.getElementById('multiselect2').click()">40 ملم</span>
+                            <input type="checkbox" id="multiselect3" class="form-control bg-light" name="iron" value="1" hidden>
+                            <span class="mutliselect" onclick="document.getElementById('multiselect3').click()">40 ملم</span>
+                            <input type="checkbox" id="multiselect4" class="form-control bg-light" name="iron" value="1" hidden>
+                            <span class="mutliselect" onclick="document.getElementById('multiselect4').click()">40 ملم</span>
+                            <input type="checkbox" id="multiselect5" class="form-control bg-light" name="iron" value="1" hidden>
+                            <span class="mutliselect" onclick="document.getElementById('multiselect5').click()">40 ملم</span>
+                            <input type="checkbox" id="multiselect6" class="form-control bg-light" name="iron" value="1" hidden>
+                            <span class="mutliselect" onclick="document.getElementById('multiselect6').click()">40 ملم</span>
+                            <input type="checkbox" id="multiselect7" class="form-control bg-light" name="iron" value="1" hidden>
+                            <span class="mutliselect" onclick="document.getElementById('multiselect7').click()">40 ملم</span>
+                            <input type="checkbox" id="multiselect8" class="form-control bg-light" name="iron" value="1" hidden>
+                            <span class="mutliselect" onclick="document.getElementById('multiselect8').click()">40 ملم</span>
+                        </div>
+
                     </div>
                     <div class="form-group">
-                        <label for="qauntity" class="w-50 float-right">الكمية</label>
-                        <input type="text" class="form-control w-50 float-left bg-light" id="qauntity">
+                        <label for="time" class="">الساعة</label>
+                        <input type="time" class="form-control bg-light" id="time">
+                    </div>
+                    <div class="form-group">
+                        <label for="weight" class="w-25 float-right">وزن العبوة</label>
+                        <input type="text" class="form-control w-50 float-right bg-light" id="weight">
+                        <span class="w-25 float-right pr-2">كيلو جرام</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="height" class="w-25 float-right">طول</label>
+                        <input type="text" class="form-control w-50 float-right bg-light" id="height">
+                        <span class="w-25 float-right pr-2">متر</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="document" class="">ارفاق ملف</label>
+                        <input type="file" class="form-control bg-light" id="document">
+                    </div>
+                    <div class="form-group">
+                        <label for="image" class="">ارفاق صورة</label>
+                        <input type="file" class="form-control bg-light" id="image">
+                    </div>
+                    <div class="form-group">
+                        <label for="color" class="">اللون</label>
+                        <input type="color" class="form-control bg-light" id="color">
                     </div>
                     <div class="form-group">
                         <label for="notes">ملاحظات</label>
@@ -380,7 +420,7 @@
                     </div>
                 </form>
             </div>
-            <div class="service-item_order text-right">
+            <div class="service-item_order text-right" style="height: 500px;">
                 <form class="p-3" method="" action="">
                     <h5 class="text-center">اسم خدمة افتراضية</h5>
                     <div class="form-group">
@@ -399,16 +439,26 @@
                         </p>
                     </div>
                     <div class="form-group">
-                        <label for="category" class="w-50 float-right">الصنف</label>
-                        <input type="text" class="form-control w-50 float-left bg-light" id="category">
+                        <label for="from_date" class="">من تاريخ</label>
+                        <input type="date" class="form-control bg-light" id="from_date">
                     </div>
                     <div class="form-group">
-                        <label for="qauntity" class="w-50 float-right">الكمية</label>
-                        <input type="text" class="form-control w-50 float-left bg-light" id="qauntity">
+                        <label for="to_date" class="">الى تاريخ</label>
+                        <input type="date" class="form-control bg-light" id="to_date">
                     </div>
                     <div class="form-group">
-                        <label for="notes">ملاحظات</label>
-                        <textarea id="notes" class="form-control bg-light"></textarea>
+                        <label for="transfer" class="">الية النقل</label>
+                        <input type="text" class="form-control bg-light" id="transfer">
+                    </div>
+                    <div class="form-group">
+                        <label for="concrete" class="w-50 float-right">نوع الخرسانة</label>
+                        <select id="concrete" class="form-control">
+                            <option value="">يرجى اختيار نوع الخرسانة</option>
+                            <option value="">40 ملي</option>
+                            <option value="">40 ملي</option>
+                            <option value="">40 ملي</option>
+                            <option value="">40 ملي</option>
+                        </select>
                     </div>
                 </form>
             </div>
