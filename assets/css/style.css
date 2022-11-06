@@ -888,3 +888,28 @@ ul.breadcrumb li a:hover {
 .detailed:hover, .detailed:active{
     font-size: 14px;
 }
+.service-item_order{
+    border: 1px solid gray;
+    border-radius: 11px;
+    box-shadow: 0px 0px 50px rgb(0 0 0 / 10%);
+}
+#address {
+    position: relative;
+}
+.checkmap{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.service-item_order .form-group{
+    height: 70px;
+}
+.service-item_order form{
+    height: 500px;
+}
+.service-item_order form textarea{
+    height: 140px;
+}
+.service-item_order{
+    margin: 15px;
+}
