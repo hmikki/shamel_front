@@ -940,3 +940,29 @@ ul#transfer {
 #address_type{
     width: 340px;
 }
+.manualAddressForm select#city{
+    background: #F8F8F8;
+    border-radius: 10px;
+    width: 340px;
+    height: 55px;
+}
+.manualAddressForm label{
+    font-size: 14px;
+    font-weight: 700;
+}
+.manualAddressForm button.address_btn{
+    width: 340px;
+    height: 55px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.12);
+    border-radius: 20px;
+    color: #272265;
+}
+.manualAddressForm button.address_btn:hover, .manualAddressForm button.address_btn:active{
+    background:#272265;
+    color: white;
+    font-size: 14px;
+}
+.manualAddressForm button.address_btn:hover svg path, .manualAddressForm button.address_btn:active svg path{
+    fill: white;
+}
