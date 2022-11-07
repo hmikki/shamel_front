@@ -919,3 +919,24 @@ ul.breadcrumb li a:hover {
     border-radius: 11px;
     padding: 10px 15px;
 }
+.btn-active{
+    background: #272265;
+    color: white;
+}
+ul#transfer {
+    background: #F8F8F8;
+    border-radius: 11px;
+    width: 320px;
+    height: 55px;
+}
+.nav-pills#transfer .nav-item .nav-link {
+    border-radius: 11px;
+    margin: 8px;
+    text-align: center;
+}
+.checkmap:hover{
+    cursor: pointer;
+}
+#address_type{
+    width: 340px;
+}
