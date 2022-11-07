@@ -868,7 +868,9 @@ ul.breadcrumb li a:hover {
     box-shadow: 0px 0px 50px rgb(0 0 0 / 10%);
 }
 .short{
-    padding: 15px 35px;
+    width: 150px;
+    height: 50px;
+    /*padding: 15px 35px;*/
     background: #272265;
     border-radius: 11px;
     color: white;
@@ -879,7 +881,9 @@ ul.breadcrumb li a:hover {
     font-size: 14px;
 }
 .detailed{
-    padding: 15px 35px;
+    width: 150px;
+    height: 50px;
+    /*padding: 15px 35px;*/
     background: rgba(39, 34, 101, 0.07);
     border-radius: 11px;
     color: #272265;
@@ -965,4 +969,63 @@ ul#transfer {
 }
 .manualAddressForm button.address_btn:hover svg path, .manualAddressForm button.address_btn:active svg path{
     fill: white;
+}
+.font-gray{
+    color: #606E7D;
+}
+#completeOrder .close{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#mySidebar img{
+    position: relative;
+    right: 50px;
+}
+#mySidebar .logoRoute{
+    padding: 5px;
+    background: none;
+}
+.user_type{
+    width: 340px;
+    height: 50px;
+    background: #F8F8F8;
+    border-radius: 11px;
+}
+.nav-pills.user_type li.nav-item{
+    width: 33%;
+}
+.nav-pills.user_type li.nav-item .nav-link {
+    text-align: center;
+    margin: 5px;
+    color: #B5BEC8 !important;
+}
+.nav-pills.user_type li.nav-item .nav-link.active{
+    background: #B5BEC8;
+    border-radius: 11px;
+    color: white !important;
+}
+form.update_user input[type="text"], form.update_user input[type="tel"]{
+    width: 340px;
+    height: 50px;
+    background: #F8F8F8;
+    border-radius: 11px;
+}
+form.update_user button.logged_btn{
+    background: #272265;
+    border-radius: 11px;
+    color: white;
+    width: 340px;
+    height: 50px;
+}
+.shadow_box{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgb(0 0 0 / 12%);
+    border-radius: 20px;
+}
+.active_tab{
+    border: 1px solid #272265;
+}
+.tab_form form{
+    display: none;
 }

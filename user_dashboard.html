@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper/css/parallax"/>
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/6.4.1/css/intlTelInput.css">
 </head>
 <body>
 <div class="chatboot-section">
@@ -69,7 +70,7 @@
             </li>
         </ul>
 
-<!--        <button class="btn btn-outline-success my-2 my-sm-0 mr-auto login-btn"><i class="fa-solid fa-user"></i>هديل مكي</button>-->
+        <!--        <button class="btn btn-outline-success my-2 my-sm-0 mr-auto login-btn"><i class="fa-solid fa-user"></i>هديل مكي</button>-->
     </div>
     <div class="my-2 my-sm-0 mr-auto">
         <li class="nav-link nav-item dropdown messages">
@@ -245,24 +246,24 @@
                 </div>
                 <div class="dropdown-divider"></div>
 
-                    <div class="content_messages">
-                        <a class="dropdown-item" href="#">
-                            <div class="user_chat">
-                                <img src="assets/img/user.png" class="" width="30px" height="35px">
-                                <h6 class="">
-                                    يرجى ارسال جميع المستلزمات الى العمل للبدء وانجاز العمل بأسرع وقت ممكن
-                                </h6>
-                            </div>
-                        </a>
-                        <a class="dropdown-item" href="#">
-                            <div class="chater">
-                                <img src="assets/img/user.png" class="" width="30px" height="35px">
-                                <h6 class="">
-                                    تم توصيل جميع مستلزمات البناء الى المكان ، يرجى تأكيد العناون مرة اخرى ورقم التواصل
-                                </h6>
-                            </div>
-                        </a>
-                    </div>
+                <div class="content_messages">
+                    <a class="dropdown-item" href="#">
+                        <div class="user_chat">
+                            <img src="assets/img/user.png" class="" width="30px" height="35px">
+                            <h6 class="">
+                                يرجى ارسال جميع المستلزمات الى العمل للبدء وانجاز العمل بأسرع وقت ممكن
+                            </h6>
+                        </div>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <div class="chater">
+                            <img src="assets/img/user.png" class="" width="30px" height="35px">
+                            <h6 class="">
+                                تم توصيل جميع مستلزمات البناء الى المكان ، يرجى تأكيد العناون مرة اخرى ورقم التواصل
+                            </h6>
+                        </div>
+                    </a>
+                </div>
 
                 <div class="sendbox">
                     <form class="">
@@ -322,7 +323,7 @@
                 هديل مكي
             </a>
             <div class="dropdown-menu text-right" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="user_dashboard.html">لوحة التحكم</a>
+                <a class="dropdown-item" href="#">لوحة التحكم</a>
                 <a class="dropdown-item" href="#">اتصل بنا</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="index.html">تسجيل الخروج</a>
@@ -330,215 +331,114 @@
         </li>
     </div>
 </nav>
-<section class="first mb-5">
-    <div class="container">
-        <div class="row search_area mt-5 p-5">
-            <div class="col-6 text-right">
-                <h4>ابحث عن خدمتك المفضلة بسرعة</h4>
-            </div>
-            <div class="col-6">
-                <form>
-                    <input type="search" class="form-control fa" placeholder="&#xF002;ابحث عن اسم الخدمة">
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
 <section class="content mb-5">
-    <div class="container">
+    <div class="container mt-5 shadow_box">
         <div class="row">
-            <div class="col-3 sidebar">
+            <div class="col-3 m-3 sidebar">
                 <div id="mySidebar" class="text-right p-3">
-                    <h5 class="pb-3">التصنيفات</h5>
-                    <a class="text-right" href="#">
-                        الكل
-                        <svg class="float-left mt-2" width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5.19351 0.198104C5.32572 0.324988 5.4 0.497057 5.4 0.676471C5.4 0.855885 5.32572 1.02795 5.19351 1.15484L1.70239 4.50408L5.1935 7.85333C5.32198 7.98094 5.39306 8.15186 5.39146 8.32926C5.38985 8.50667 5.31568 8.67637 5.18491 8.80182C5.05415 8.92727 4.87726 8.99843 4.69234 8.99997C4.50741 9.00152 4.32926 8.93332 4.19624 8.81007L0.206495 4.98245C0.0742762 4.85557 -2.04722e-07 4.6835 -1.9688e-07 4.50408C-1.89037e-07 4.32467 0.0742762 4.1526 0.206495 4.02572L4.19624 0.198104C4.3285 0.0712582 4.50786 1.97045e-07 4.69487 2.0522e-07C4.88189 2.13394e-07 5.06125 0.0712583 5.19351 0.198104Z" fill="black"/>
-                        </svg>
+                    <a class="logoRoute text-right" href="index.html">
+                    <img src="assets/img/dashboard_logo.png">
                     </a>
-                    <a class="text-right" href="#">
-                        قسم المنافسات
-                        <svg class="float-left mt-2" width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5.19351 0.198104C5.32572 0.324988 5.4 0.497057 5.4 0.676471C5.4 0.855885 5.32572 1.02795 5.19351 1.15484L1.70239 4.50408L5.1935 7.85333C5.32198 7.98094 5.39306 8.15186 5.39146 8.32926C5.38985 8.50667 5.31568 8.67637 5.18491 8.80182C5.05415 8.92727 4.87726 8.99843 4.69234 8.99997C4.50741 9.00152 4.32926 8.93332 4.19624 8.81007L0.206495 4.98245C0.0742762 4.85557 -2.04722e-07 4.6835 -1.9688e-07 4.50408C-1.89037e-07 4.32467 0.0742762 4.1526 0.206495 4.02572L4.19624 0.198104C4.3285 0.0712582 4.50786 1.97045e-07 4.69487 2.0522e-07C4.88189 2.13394e-07 5.06125 0.0712583 5.19351 0.198104Z" fill="black"/>
-                        </svg>
-                    </a>
-                    <a class="text-right" href="#">
-                        قسم فرص الاستثمار البلدي
-                        <svg class="float-left mt-2" width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5.19351 0.198104C5.32572 0.324988 5.4 0.497057 5.4 0.676471C5.4 0.855885 5.32572 1.02795 5.19351 1.15484L1.70239 4.50408L5.1935 7.85333C5.32198 7.98094 5.39306 8.15186 5.39146 8.32926C5.38985 8.50667 5.31568 8.67637 5.18491 8.80182C5.05415 8.92727 4.87726 8.99843 4.69234 8.99997C4.50741 9.00152 4.32926 8.93332 4.19624 8.81007L0.206495 4.98245C0.0742762 4.85557 -2.04722e-07 4.6835 -1.9688e-07 4.50408C-1.89037e-07 4.32467 0.0742762 4.1526 0.206495 4.02572L4.19624 0.198104C4.3285 0.0712582 4.50786 1.97045e-07 4.69487 2.0522e-07C4.88189 2.13394e-07 5.06125 0.0712583 5.19351 0.198104Z" fill="black"/>
-                        </svg>
-                    </a>
-                    <a class="text-right" href="#">
-                        قسم المعارض والموتمرات
-                        <svg class="float-left mt-2" width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5.19351 0.198104C5.32572 0.324988 5.4 0.497057 5.4 0.676471C5.4 0.855885 5.32572 1.02795 5.19351 1.15484L1.70239 4.50408L5.1935 7.85333C5.32198 7.98094 5.39306 8.15186 5.39146 8.32926C5.38985 8.50667 5.31568 8.67637 5.18491 8.80182C5.05415 8.92727 4.87726 8.99843 4.69234 8.99997C4.50741 9.00152 4.32926 8.93332 4.19624 8.81007L0.206495 4.98245C0.0742762 4.85557 -2.04722e-07 4.6835 -1.9688e-07 4.50408C-1.89037e-07 4.32467 0.0742762 4.1526 0.206495 4.02572L4.19624 0.198104C4.3285 0.0712582 4.50786 1.97045e-07 4.69487 2.0522e-07C4.88189 2.13394e-07 5.06125 0.0712583 5.19351 0.198104Z" fill="black"/>
-                        </svg>
-                    </a>
-                    <button class="dropdown-btn text-right">
-                        خدمات البناء
-                        <svg class="float-left mt-2" width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5.19351 0.198104C5.32572 0.324988 5.4 0.497057 5.4 0.676471C5.4 0.855885 5.32572 1.02795 5.19351 1.15484L1.70239 4.50408L5.1935 7.85333C5.32198 7.98094 5.39306 8.15186 5.39146 8.32926C5.38985 8.50667 5.31568 8.67637 5.18491 8.80182C5.05415 8.92727 4.87726 8.99843 4.69234 8.99997C4.50741 9.00152 4.32926 8.93332 4.19624 8.81007L0.206495 4.98245C0.0742762 4.85557 -2.04722e-07 4.6835 -1.9688e-07 4.50408C-1.89037e-07 4.32467 0.0742762 4.1526 0.206495 4.02572L4.19624 0.198104C4.3285 0.0712582 4.50786 1.97045e-07 4.69487 2.0522e-07C4.88189 2.13394e-07 5.06125 0.0712583 5.19351 0.198104Z" fill="black"/>
-                        </svg>
+                    <button class="text-right" onclick="document.getElementById('update_user').classList.add('show')">
+                        الملف الشخصي
                     </button>
-                    <div class="dropdown-container">
-                        <input type="checkbox" class="" name=""><label>خرسانة جاهزة</label>
-                        <br/><input type="checkbox" class="" name=""><label>حديد تسليح</label>
-                    </div>
-                    <a class="text-right" href="#">
-                        قسم المعارض والموتمرات
-                        <svg class="float-left mt-2" width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5.19351 0.198104C5.32572 0.324988 5.4 0.497057 5.4 0.676471C5.4 0.855885 5.32572 1.02795 5.19351 1.15484L1.70239 4.50408L5.1935 7.85333C5.32198 7.98094 5.39306 8.15186 5.39146 8.32926C5.38985 8.50667 5.31568 8.67637 5.18491 8.80182C5.05415 8.92727 4.87726 8.99843 4.69234 8.99997C4.50741 9.00152 4.32926 8.93332 4.19624 8.81007L0.206495 4.98245C0.0742762 4.85557 -2.04722e-07 4.6835 -1.9688e-07 4.50408C-1.89037e-07 4.32467 0.0742762 4.1526 0.206495 4.02572L4.19624 0.198104C4.3285 0.0712582 4.50786 1.97045e-07 4.69487 2.0522e-07C4.88189 2.13394e-07 5.06125 0.0712583 5.19351 0.198104Z" fill="black"/>
-                        </svg>
-                    </a>
-                    <a class="text-right" href="#">
-                        قسم خدمات المدن
-                        <svg class="float-left mt-2" width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5.19351 0.198104C5.32572 0.324988 5.4 0.497057 5.4 0.676471C5.4 0.855885 5.32572 1.02795 5.19351 1.15484L1.70239 4.50408L5.1935 7.85333C5.32198 7.98094 5.39306 8.15186 5.39146 8.32926C5.38985 8.50667 5.31568 8.67637 5.18491 8.80182C5.05415 8.92727 4.87726 8.99843 4.69234 8.99997C4.50741 9.00152 4.32926 8.93332 4.19624 8.81007L0.206495 4.98245C0.0742762 4.85557 -2.04722e-07 4.6835 -1.9688e-07 4.50408C-1.89037e-07 4.32467 0.0742762 4.1526 0.206495 4.02572L4.19624 0.198104C4.3285 0.0712582 4.50786 1.97045e-07 4.69487 2.0522e-07C4.88189 2.13394e-07 5.06125 0.0712583 5.19351 0.198104Z" fill="black"/>
-                        </svg>
-                    </a>
-                    <a class="text-right" href="#">
-                        صيانة المركبات
-                        <svg class="float-left mt-2" width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5.19351 0.198104C5.32572 0.324988 5.4 0.497057 5.4 0.676471C5.4 0.855885 5.32572 1.02795 5.19351 1.15484L1.70239 4.50408L5.1935 7.85333C5.32198 7.98094 5.39306 8.15186 5.39146 8.32926C5.38985 8.50667 5.31568 8.67637 5.18491 8.80182C5.05415 8.92727 4.87726 8.99843 4.69234 8.99997C4.50741 9.00152 4.32926 8.93332 4.19624 8.81007L0.206495 4.98245C0.0742762 4.85557 -2.04722e-07 4.6835 -1.9688e-07 4.50408C-1.89037e-07 4.32467 0.0742762 4.1526 0.206495 4.02572L4.19624 0.198104C4.3285 0.0712582 4.50786 1.97045e-07 4.69487 2.0522e-07C4.88189 2.13394e-07 5.06125 0.0712583 5.19351 0.198104Z" fill="black"/>
-                        </svg>
-                    </a>
-                    <a class="text-right" href="#">
-                        خدمات المياه
-                        <svg class="float-left mt-2" width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5.19351 0.198104C5.32572 0.324988 5.4 0.497057 5.4 0.676471C5.4 0.855885 5.32572 1.02795 5.19351 1.15484L1.70239 4.50408L5.1935 7.85333C5.32198 7.98094 5.39306 8.15186 5.39146 8.32926C5.38985 8.50667 5.31568 8.67637 5.18491 8.80182C5.05415 8.92727 4.87726 8.99843 4.69234 8.99997C4.50741 9.00152 4.32926 8.93332 4.19624 8.81007L0.206495 4.98245C0.0742762 4.85557 -2.04722e-07 4.6835 -1.9688e-07 4.50408C-1.89037e-07 4.32467 0.0742762 4.1526 0.206495 4.02572L4.19624 0.198104C4.3285 0.0712582 4.50786 1.97045e-07 4.69487 2.0522e-07C4.88189 2.13394e-07 5.06125 0.0712583 5.19351 0.198104Z" fill="black"/>
-                        </svg>
-                    </a>
-                    <a class="text-right" href="#">
-                        تأجير سيارات
-                        <svg class="float-left mt-2" width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5.19351 0.198104C5.32572 0.324988 5.4 0.497057 5.4 0.676471C5.4 0.855885 5.32572 1.02795 5.19351 1.15484L1.70239 4.50408L5.1935 7.85333C5.32198 7.98094 5.39306 8.15186 5.39146 8.32926C5.38985 8.50667 5.31568 8.67637 5.18491 8.80182C5.05415 8.92727 4.87726 8.99843 4.69234 8.99997C4.50741 9.00152 4.32926 8.93332 4.19624 8.81007L0.206495 4.98245C0.0742762 4.85557 -2.04722e-07 4.6835 -1.9688e-07 4.50408C-1.89037e-07 4.32467 0.0742762 4.1526 0.206495 4.02572L4.19624 0.198104C4.3285 0.0712582 4.50786 1.97045e-07 4.69487 2.0522e-07C4.88189 2.13394e-07 5.06125 0.0712583 5.19351 0.198104Z" fill="black"/>
-                        </svg>
-                    </a>
+                    <button class="text-right" onclick="document.getElementById('orders').classList.add('show')">
+                        الطلبات
+                    </button>
+                    <button class="text-right" onclick="document.getElementById('update_user').classList.add('show')">
+                        عناويني
+                    </button>
+                    <button class="text-right">
+                        المحفظة
+                    </button>
+                    <button class="text-right">
+                        طرق الدفع
+                    </button>
+                    <button class="text-right">
+                        الاعدادات
+                    </button>
+                    <button class="text-right">
+                        سجل كمزود خدمة ..
+                    </button>
+                    <button class="text-right">
+                        تسجيل الخروج
+                    </button>
                 </div>
             </div>
-            <div class="col-9 service-items">
-                <div class="row">
-                    <div class="col-12">
-                        <ul class="breadcrumb text-right">
-                            <li><a href="#">الرئيسية</a></li>
-                            <li><a href="#">خدمات البناء</a></li>
-                            <li><a href="#">خرسانة جاهزة</a></li>
-                            <li>جهد الكسر 250ملي</li>
-                        </ul>
-                    </div>
+            <div class="col-8">
+                <div class="row tab_form">
+                    <form id="update_user" class="text-right forms update_user p-5" method="" action="">
+                        <div class="form-group">
+                            <label>نوع المستخدم</label>
+                            <ul class="nav nav-pills user_type" id="ex1" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <input type="radio" name="user_type" value="1" id="user_type1" hidden>
+                                    <a class="nav-link active" id="ex1-tab-1" data-mdb-toggle="pill" onclick="document.getElementById('user_type1').click();document.getElementById('ex1-tab-2').classList.remove('active'); document.getElementById('ex1-tab-3').classList.remove('active'); document.getElementById('ex1-tab-1').classList.add('active')" href="#ex1-pills-1" role="tab" aria-controls="ex1-pills-1" aria-selected="true">فرد</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <input type="radio" name="user_type" value="2" id="user_type2" hidden>
+                                    <a class="nav-link" id="ex1-tab-2" data-mdb-toggle="pill" onclick="document.getElementById('user_type2').click();document.getElementById('ex1-tab-1').classList.remove('active');document.getElementById('ex1-tab-3').classList.remove('active'); document.getElementById('ex1-tab-2').classList.add('active')" href="#ex1-pills-2" role="tab" aria-controls="ex1-pills-2" aria-selected="false">مندوب</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <input type="radio" name="user_type" value="3" id="user_type3" hidden>
+                                    <a class="nav-link" id="ex1-tab-3" data-mdb-toggle="pill" onclick="document.getElementById('user_type3').click();document.getElementById('ex1-tab-1').classList.remove('active'); document.getElementById('ex1-tab-2').classList.remove('active'); document.getElementById('ex1-tab-3').classList.add('active')" href="#ex1-pills-3" role="tab" aria-controls="ex1-pills-2" aria-selected="false">منشأة</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">الاسم</label>
+                            <input type="text" id="name" class="form-control" placeholder="هديل مكي">
+                        </div>
+                        <div class="form-group">
+                            <label for="mobile-number">رقم الجوال</label>
+                            <div class="form-group mob_field mb-5">
+                                <input  type="tel" id="mobile-number" class="form-control bg-light" placeholder="05 xx xxxxx">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="id_number">رقم الهوية</label>
+                            <input type="text" id="id_number" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group mt-5">
+                            <button type="button" class="logged_btn">حفظ التعديل</button>
+                        </div>
+                    </form>
+                    <form id="orders" class="text-right forms update_user p-5" method="" action="">
+                        <div class="form-group">
+                            <ul class="nav nav-pills order_type" id="order" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <input type="radio" name="order_type" value="1" id="order_type1" hidden>
+                                    <a class="nav-link active" id="order-tab-1" data-mdb-toggle="pill" onclick="document.getElementById('order_type1').click();document.getElementById('order-tab-2').classList.remove('active'); document.getElementById('order-tab-3').classList.remove('active'); document.getElementById('order-tab-1').classList.add('active')" href="#ex1-pills-1" role="tab" aria-controls="ex1-pills-1" aria-selected="true">الحالية</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <input type="radio" name="order_type" value="2" id="order_type2" hidden>
+                                    <a class="nav-link" id="order-tab-2" data-mdb-toggle="pill" onclick="document.getElementById('order_type2').click();document.getElementById('order-tab-1').classList.remove('active');document.getElementById('order-tab-3').classList.remove('active'); document.getElementById('order-tab-2').classList.add('active')" href="#ex1-pills-2" role="tab" aria-controls="ex1-pills-2" aria-selected="false">قيد التنفيذ</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <input type="radio" name="order_type" value="3" id="order_type3" hidden>
+                                    <a class="nav-link" id="order-tab-3" data-mdb-toggle="pill" onclick="document.getElementById('order_type3').click();document.getElementById('order-tab-1').classList.remove('active'); document.getElementById('order-tab-2').classList.remove('active'); document.getElementById('order-tab-3').classList.add('active')" href="#ex1-pills-3" role="tab" aria-controls="ex1-pills-2" aria-selected="false">المكتملة</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">الاسم</label>
+                            <input type="text" id="name" class="form-control" placeholder="هديل مكي">
+                        </div>
+                        <div class="form-group">
+                            <label for="mobile-number">رقم الجوال</label>
+                            <div class="form-group mob_field mb-5">
+                                <input  type="tel" id="mobile-number" class="form-control bg-light" placeholder="05 xx xxxxx">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="id_number">رقم الهوية</label>
+                            <input type="text" id="id_number" class="form-control" placeholder="">
+                        </div>
+                        <div class="form-group mt-5">
+                            <button type="button" class="logged_btn">حفظ التعديل</button>
+                        </div>
+                    </form>
                 </div>
-                        <form action="" method="" class="w-100 p-3">
-                            <div class="row">
-                            <div class="form-group text-right item">
-                                    <div class="w-75 float-right">
-                                        <img src="assets/img/Group%201611.png">
-                                        <h5>اسم خدمة افتراضية</h5>
-                                    </div>
-                                    <div class="w-25 float-left text-left">
-                                        <input type="checkbox" name="">
-                                    </div>
-                                <div class="w-75 float-right">
-                                    <p>فتح العداد 250 ر.س و 1.75 ر.س للكيلو بعد مسافة 700 كيلو يتم احتساب الكيلو 1.45 ر.س</p>
-                                </div>
-                                <div class="w-25 float-left text-left arrow">
-                                    <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16 5C16 4.85268 15.9398 4.71139 15.8326 4.60722C15.7255 4.50305 15.5802 4.44452 15.4286 4.44452L1.95175 4.44452L5.5481 0.949458C5.65539 0.845155 5.71566 0.703687 5.71566 0.55618C5.71566 0.408672 5.65539 0.267206 5.5481 0.162902C5.4408 0.0585983 5.29528 7.3311e-07 5.14355 7.3943e-07C4.99182 7.4575e-07 4.8463 0.0585983 4.739 0.162902L0.167868 4.60672C0.114656 4.65832 0.0724382 4.71962 0.0436327 4.7871C0.0148272 4.85459 -2.32709e-07 4.92694 -2.29358e-07 5C-2.26006e-07 5.07307 0.0148272 5.14541 0.0436327 5.2129C0.0724382 5.28038 0.114656 5.34168 0.167868 5.39328L4.739 9.8371C4.79213 9.88874 4.8552 9.92971 4.92461 9.95766C4.99402 9.98561 5.06842 10 5.14355 10C5.29528 10 5.4408 9.9414 5.5481 9.8371C5.65539 9.73279 5.71566 9.59133 5.71566 9.44382C5.71566 9.29631 5.65539 9.15485 5.5481 9.05054L1.95175 5.55548L15.4286 5.55548C15.5802 5.55548 15.7255 5.49695 15.8326 5.39278C15.9398 5.28861 16 5.14732 16 5Z" fill="#606E7D"/>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="form-group text-right item">
-                                <div class="w-75 float-right">
-                                    <img src="assets/img/Group%201611.png">
-                                    <h5>اسم خدمة افتراضية</h5>
-                                </div>
-                                <div class="w-25 float-left text-left">
-                                    <input type="checkbox" name="">
-                                </div>
-                                <div class="w-75 float-right">
-                                    <p>فتح العداد 250 ر.س و 1.75 ر.س للكيلو بعد مسافة 700 كيلو يتم احتساب الكيلو 1.45 ر.س</p>
-                                </div>
-                                <div class="w-25 float-left text-left arrow">
-                                    <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16 5C16 4.85268 15.9398 4.71139 15.8326 4.60722C15.7255 4.50305 15.5802 4.44452 15.4286 4.44452L1.95175 4.44452L5.5481 0.949458C5.65539 0.845155 5.71566 0.703687 5.71566 0.55618C5.71566 0.408672 5.65539 0.267206 5.5481 0.162902C5.4408 0.0585983 5.29528 7.3311e-07 5.14355 7.3943e-07C4.99182 7.4575e-07 4.8463 0.0585983 4.739 0.162902L0.167868 4.60672C0.114656 4.65832 0.0724382 4.71962 0.0436327 4.7871C0.0148272 4.85459 -2.32709e-07 4.92694 -2.29358e-07 5C-2.26006e-07 5.07307 0.0148272 5.14541 0.0436327 5.2129C0.0724382 5.28038 0.114656 5.34168 0.167868 5.39328L4.739 9.8371C4.79213 9.88874 4.8552 9.92971 4.92461 9.95766C4.99402 9.98561 5.06842 10 5.14355 10C5.29528 10 5.4408 9.9414 5.5481 9.8371C5.65539 9.73279 5.71566 9.59133 5.71566 9.44382C5.71566 9.29631 5.65539 9.15485 5.5481 9.05054L1.95175 5.55548L15.4286 5.55548C15.5802 5.55548 15.7255 5.49695 15.8326 5.39278C15.9398 5.28861 16 5.14732 16 5Z" fill="#606E7D"/>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="form-group text-right item">
-                                <div class="w-75 float-right">
-                                    <img src="assets/img/Group%201611.png">
-                                    <h5>اسم خدمة افتراضية</h5>
-                                </div>
-                                <div class="w-25 float-left text-left">
-                                    <input type="checkbox" name="">
-                                </div>
-                                <div class="w-75 float-right">
-                                    <p>فتح العداد 250 ر.س و 1.75 ر.س للكيلو بعد مسافة 700 كيلو يتم احتساب الكيلو 1.45 ر.س</p>
-                                </div>
-                                <div class="w-25 float-left text-left arrow">
-                                    <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16 5C16 4.85268 15.9398 4.71139 15.8326 4.60722C15.7255 4.50305 15.5802 4.44452 15.4286 4.44452L1.95175 4.44452L5.5481 0.949458C5.65539 0.845155 5.71566 0.703687 5.71566 0.55618C5.71566 0.408672 5.65539 0.267206 5.5481 0.162902C5.4408 0.0585983 5.29528 7.3311e-07 5.14355 7.3943e-07C4.99182 7.4575e-07 4.8463 0.0585983 4.739 0.162902L0.167868 4.60672C0.114656 4.65832 0.0724382 4.71962 0.0436327 4.7871C0.0148272 4.85459 -2.32709e-07 4.92694 -2.29358e-07 5C-2.26006e-07 5.07307 0.0148272 5.14541 0.0436327 5.2129C0.0724382 5.28038 0.114656 5.34168 0.167868 5.39328L4.739 9.8371C4.79213 9.88874 4.8552 9.92971 4.92461 9.95766C4.99402 9.98561 5.06842 10 5.14355 10C5.29528 10 5.4408 9.9414 5.5481 9.8371C5.65539 9.73279 5.71566 9.59133 5.71566 9.44382C5.71566 9.29631 5.65539 9.15485 5.5481 9.05054L1.95175 5.55548L15.4286 5.55548C15.5802 5.55548 15.7255 5.49695 15.8326 5.39278C15.9398 5.28861 16 5.14732 16 5Z" fill="#606E7D"/>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="form-group text-right item">
-                                <div class="w-75 float-right">
-                                    <img src="assets/img/Group%201611.png">
-                                    <h5>اسم خدمة افتراضية</h5>
-                                </div>
-                                <div class="w-25 float-left text-left">
-                                    <input type="checkbox" name="">
-                                </div>
-                                <div class="w-75 float-right">
-                                    <p>فتح العداد 250 ر.س و 1.75 ر.س للكيلو بعد مسافة 700 كيلو يتم احتساب الكيلو 1.45 ر.س</p>
-                                </div>
-                                <div class="w-25 float-left text-left arrow">
-                                    <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16 5C16 4.85268 15.9398 4.71139 15.8326 4.60722C15.7255 4.50305 15.5802 4.44452 15.4286 4.44452L1.95175 4.44452L5.5481 0.949458C5.65539 0.845155 5.71566 0.703687 5.71566 0.55618C5.71566 0.408672 5.65539 0.267206 5.5481 0.162902C5.4408 0.0585983 5.29528 7.3311e-07 5.14355 7.3943e-07C4.99182 7.4575e-07 4.8463 0.0585983 4.739 0.162902L0.167868 4.60672C0.114656 4.65832 0.0724382 4.71962 0.0436327 4.7871C0.0148272 4.85459 -2.32709e-07 4.92694 -2.29358e-07 5C-2.26006e-07 5.07307 0.0148272 5.14541 0.0436327 5.2129C0.0724382 5.28038 0.114656 5.34168 0.167868 5.39328L4.739 9.8371C4.79213 9.88874 4.8552 9.92971 4.92461 9.95766C4.99402 9.98561 5.06842 10 5.14355 10C5.29528 10 5.4408 9.9414 5.5481 9.8371C5.65539 9.73279 5.71566 9.59133 5.71566 9.44382C5.71566 9.29631 5.65539 9.15485 5.5481 9.05054L1.95175 5.55548L15.4286 5.55548C15.5802 5.55548 15.7255 5.49695 15.8326 5.39278C15.9398 5.28861 16 5.14732 16 5Z" fill="#606E7D"/>
-                                    </svg>
-                                </div>
-                            </div>
-                                <div class="form-group text-right item">
-                                    <div class="w-75 float-right">
-                                        <img src="assets/img/Group%201611.png">
-                                        <h5>اسم خدمة افتراضية</h5>
-                                    </div>
-                                    <div class="w-25 float-left text-left">
-                                        <input type="checkbox" name="">
-                                    </div>
-                                    <div class="w-75 float-right">
-                                        <p>فتح العداد 250 ر.س و 1.75 ر.س للكيلو بعد مسافة 700 كيلو يتم احتساب الكيلو 1.45 ر.س</p>
-                                    </div>
-                                    <div class="w-25 float-left text-left arrow">
-                                        <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16 5C16 4.85268 15.9398 4.71139 15.8326 4.60722C15.7255 4.50305 15.5802 4.44452 15.4286 4.44452L1.95175 4.44452L5.5481 0.949458C5.65539 0.845155 5.71566 0.703687 5.71566 0.55618C5.71566 0.408672 5.65539 0.267206 5.5481 0.162902C5.4408 0.0585983 5.29528 7.3311e-07 5.14355 7.3943e-07C4.99182 7.4575e-07 4.8463 0.0585983 4.739 0.162902L0.167868 4.60672C0.114656 4.65832 0.0724382 4.71962 0.0436327 4.7871C0.0148272 4.85459 -2.32709e-07 4.92694 -2.29358e-07 5C-2.26006e-07 5.07307 0.0148272 5.14541 0.0436327 5.2129C0.0724382 5.28038 0.114656 5.34168 0.167868 5.39328L4.739 9.8371C4.79213 9.88874 4.8552 9.92971 4.92461 9.95766C4.99402 9.98561 5.06842 10 5.14355 10C5.29528 10 5.4408 9.9414 5.5481 9.8371C5.65539 9.73279 5.71566 9.59133 5.71566 9.44382C5.71566 9.29631 5.65539 9.15485 5.5481 9.05054L1.95175 5.55548L15.4286 5.55548C15.5802 5.55548 15.7255 5.49695 15.8326 5.39278C15.9398 5.28861 16 5.14732 16 5Z" fill="#606E7D"/>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="form-group text-right item">
-                                    <div class="w-75 float-right">
-                                        <img src="assets/img/Group%201611.png">
-                                        <h5>اسم خدمة افتراضية</h5>
-                                    </div>
-                                    <div class="w-25 float-left text-left">
-                                        <input type="checkbox" name="">
-                                    </div>
-                                    <div class="w-75 float-right">
-                                        <p>فتح العداد 250 ر.س و 1.75 ر.س للكيلو بعد مسافة 700 كيلو يتم احتساب الكيلو 1.45 ر.س</p>
-                                    </div>
-                                    <div class="w-25 float-left text-left arrow">
-                                        <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16 5C16 4.85268 15.9398 4.71139 15.8326 4.60722C15.7255 4.50305 15.5802 4.44452 15.4286 4.44452L1.95175 4.44452L5.5481 0.949458C5.65539 0.845155 5.71566 0.703687 5.71566 0.55618C5.71566 0.408672 5.65539 0.267206 5.5481 0.162902C5.4408 0.0585983 5.29528 7.3311e-07 5.14355 7.3943e-07C4.99182 7.4575e-07 4.8463 0.0585983 4.739 0.162902L0.167868 4.60672C0.114656 4.65832 0.0724382 4.71962 0.0436327 4.7871C0.0148272 4.85459 -2.32709e-07 4.92694 -2.29358e-07 5C-2.26006e-07 5.07307 0.0148272 5.14541 0.0436327 5.2129C0.0724382 5.28038 0.114656 5.34168 0.167868 5.39328L4.739 9.8371C4.79213 9.88874 4.8552 9.92971 4.92461 9.95766C4.99402 9.98561 5.06842 10 5.14355 10C5.29528 10 5.4408 9.9414 5.5481 9.8371C5.65539 9.73279 5.71566 9.59133 5.71566 9.44382C5.71566 9.29631 5.65539 9.15485 5.5481 9.05054L1.95175 5.55548L15.4286 5.55548C15.5802 5.55548 15.7255 5.49695 15.8326 5.39278C15.9398 5.28861 16 5.14732 16 5Z" fill="#606E7D"/>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-12 text-right pt-5">
-                                    <a class="btn short" href="short_order.html">طلب سريع</a>
-                                    <a class="btn detailed" href="detailed_order.html">طلب تفصيلي</a>
-                                </div>
-                            </div>
-                        </form>
             </div>
         </div>
     </div>
@@ -591,8 +491,9 @@
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="assets/js/custom.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/6.4.1/js/intlTelInput.min.js"></script>
 
 <!-- Initialize Swiper -->
 <script>
@@ -602,6 +503,7 @@
       });
     </script>
 <script>
+$("#mobile-number").intlTelInput();
   AOS.init();
 </script>
 <script>
