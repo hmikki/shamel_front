@@ -1029,3 +1029,16 @@ form.update_user button.logged_btn{
 .tab_form form{
     display: none;
 }
+.order_type.nav-pills .nav-item{
+    width: 33%;
+    text-align: center;
+}
+.order_item {
+    background: #F8F8F8;
+    border-radius: 11px;
+    height: 150px;
+    padding: 15px;
+}
+.order_item h6{
+    display: inline;
+}
