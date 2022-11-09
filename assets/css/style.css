@@ -1063,9 +1063,33 @@ form.update_user button.logged_btn{
 .transaction_header{
     background: #F8F8F8;
     border-radius: 11px;
+    height: 160px;
 }
-.transaction_header svg{
+.transaction_header svg.transaction_icon{
     position: absolute;
     top: 10px;
     right: 42%;
 }
+.add_transaction{
+    background: #272265;
+    border-radius: 100px;
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    bottom: -50px;
+    right: 35%;
+    height: 55px;
+    width: 200px;
+}
+.transaction_header .balance{
+    font-size: 24px;
+    font-weight: bold;
+}
+.transaction_box{
+    height: 250px;
+    overflow-y: scroll;
+    width: 100%;
+    overflow-x: hidden;
+    padding: 5px;
+}
+
