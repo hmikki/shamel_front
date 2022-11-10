@@ -339,22 +339,22 @@
                     <a class="logoRoute text-right" href="index.html">
                     <img src="assets/img/dashboard_logo.png">
                     </a>
-                    <button class="text-right" onclick="document.getElementById('update_user').classList.add('show')">
+                    <button class="text-right" onclick="Array.from(document.getElementsByClassName('update_user')).forEach(function(element) {element.classList.remove('show')});document.getElementById('update_user').classList.add('show');">
                         الملف الشخصي
                     </button>
-                    <button class="text-right" onclick="document.getElementById('orders').classList.add('show')">
+                    <button class="text-right" onclick="Array.from(document.getElementsByClassName('update_user')).forEach(function(element) {element.classList.remove('show')});document.getElementById('orders').classList.add('show')">
                         الطلبات
                     </button>
-                    <button class="text-right" onclick="document.getElementById('my_addresses').classList.add('show')">
+                    <button class="text-right" onclick="Array.from(document.getElementsByClassName('update_user')).forEach(function(element) {element.classList.remove('show')});document.getElementById('my_addresses').classList.add('show')">
                         عناويني
                     </button>
-                    <button class="text-right" onclick="document.getElementById('transactions').classList.add('show')">
+                    <button class="text-right" onclick="Array.from(document.getElementsByClassName('update_user')).forEach(function(element) {element.classList.remove('show')});document.getElementById('transactions').classList.add('show')">
                         المحفظة
                     </button>
-                    <button class="text-right">
+                    <button class="text-right" onclick="Array.from(document.getElementsByClassName('update_user')).forEach(function(element) {element.classList.remove('show')});document.getElementById('payments').classList.add('show')">
                         طرق الدفع
                     </button>
-                    <button class="text-right">
+                    <button class="text-right" onclick="Array.from(document.getElementsByClassName('update_user')).forEach(function(element) {element.classList.remove('show')});document.getElementById('settings').classList.add('show')">
                         الاعدادات
                     </button>
                     <button class="text-right">
@@ -445,7 +445,7 @@
                                     </ul>
                                 </div>
                                 <div class="col-4 text-left">
-                                    <a href="#">
+                                    <a href="#" onclick="Array.from(document.getElementsByClassName('update_user')).forEach(function(element) {element.classList.remove('show')});document.getElementById('orders_details').classList.add('show')">
                                     <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M16 5C16 4.85268 15.9398 4.71139 15.8326 4.60722C15.7255 4.50305 15.5802 4.44452 15.4286 4.44452L1.95175 4.44452L5.5481 0.949458C5.65539 0.845155 5.71566 0.703687 5.71566 0.55618C5.71566 0.408672 5.65539 0.267206 5.5481 0.162902C5.4408 0.0585983 5.29528 7.3311e-07 5.14355 7.3943e-07C4.99182 7.4575e-07 4.8463 0.0585983 4.739 0.162902L0.167868 4.60672C0.114656 4.65832 0.0724382 4.71962 0.0436327 4.7871C0.0148272 4.85459 -2.32709e-07 4.92694 -2.29358e-07 5C-2.26006e-07 5.07307 0.0148272 5.14541 0.0436327 5.2129C0.0724382 5.28038 0.114656 5.34168 0.167868 5.39328L4.739 9.8371C4.79213 9.88874 4.8552 9.92971 4.92461 9.95766C4.99402 9.98561 5.06842 10 5.14355 10C5.29528 10 5.4408 9.9414 5.5481 9.8371C5.65539 9.73279 5.71566 9.59133 5.71566 9.44382C5.71566 9.29631 5.65539 9.15485 5.5481 9.05054L1.95175 5.55548L15.4286 5.55548C15.5802 5.55548 15.7255 5.49695 15.8326 5.39278C15.9398 5.28861 16 5.14732 16 5Z" fill="#606E7D"/>
                                     </svg>
@@ -478,7 +478,7 @@
                                     </ul>
                                 </div>
                                 <div class="col-4 text-left">
-                                    <a href="#">
+                                    <a href="#" onclick="Array.from(document.getElementsByClassName('update_user')).forEach(function(element) {element.classList.remove('show')});document.getElementById('orders_details').classList.add('show')">
                                         <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M16 5C16 4.85268 15.9398 4.71139 15.8326 4.60722C15.7255 4.50305 15.5802 4.44452 15.4286 4.44452L1.95175 4.44452L5.5481 0.949458C5.65539 0.845155 5.71566 0.703687 5.71566 0.55618C5.71566 0.408672 5.65539 0.267206 5.5481 0.162902C5.4408 0.0585983 5.29528 7.3311e-07 5.14355 7.3943e-07C4.99182 7.4575e-07 4.8463 0.0585983 4.739 0.162902L0.167868 4.60672C0.114656 4.65832 0.0724382 4.71962 0.0436327 4.7871C0.0148272 4.85459 -2.32709e-07 4.92694 -2.29358e-07 5C-2.26006e-07 5.07307 0.0148272 5.14541 0.0436327 5.2129C0.0724382 5.28038 0.114656 5.34168 0.167868 5.39328L4.739 9.8371C4.79213 9.88874 4.8552 9.92971 4.92461 9.95766C4.99402 9.98561 5.06842 10 5.14355 10C5.29528 10 5.4408 9.9414 5.5481 9.8371C5.65539 9.73279 5.71566 9.59133 5.71566 9.44382C5.71566 9.29631 5.65539 9.15485 5.5481 9.05054L1.95175 5.55548L15.4286 5.55548C15.5802 5.55548 15.7255 5.49695 15.8326 5.39278C15.9398 5.28861 16 5.14732 16 5Z" fill="#606E7D"/>
                                         </svg>
@@ -511,7 +511,7 @@
                                     </ul>
                                 </div>
                                 <div class="col-4 text-left">
-                                    <a href="#">
+                                    <a href="#" onclick="Array.from(document.getElementsByClassName('update_user')).forEach(function(element) {element.classList.remove('show')});document.getElementById('orders_details').classList.add('show')">
                                         <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M16 5C16 4.85268 15.9398 4.71139 15.8326 4.60722C15.7255 4.50305 15.5802 4.44452 15.4286 4.44452L1.95175 4.44452L5.5481 0.949458C5.65539 0.845155 5.71566 0.703687 5.71566 0.55618C5.71566 0.408672 5.65539 0.267206 5.5481 0.162902C5.4408 0.0585983 5.29528 7.3311e-07 5.14355 7.3943e-07C4.99182 7.4575e-07 4.8463 0.0585983 4.739 0.162902L0.167868 4.60672C0.114656 4.65832 0.0724382 4.71962 0.0436327 4.7871C0.0148272 4.85459 -2.32709e-07 4.92694 -2.29358e-07 5C-2.26006e-07 5.07307 0.0148272 5.14541 0.0436327 5.2129C0.0724382 5.28038 0.114656 5.34168 0.167868 5.39328L4.739 9.8371C4.79213 9.88874 4.8552 9.92971 4.92461 9.95766C4.99402 9.98561 5.06842 10 5.14355 10C5.29528 10 5.4408 9.9414 5.5481 9.8371C5.65539 9.73279 5.71566 9.59133 5.71566 9.44382C5.71566 9.29631 5.65539 9.15485 5.5481 9.05054L1.95175 5.55548L15.4286 5.55548C15.5802 5.55548 15.7255 5.49695 15.8326 5.39278C15.9398 5.28861 16 5.14732 16 5Z" fill="#606E7D"/>
                                         </svg>
@@ -544,11 +544,122 @@
                                     </ul>
                                 </div>
                                 <div class="col-4 text-left">
-                                    <a href="#">
+                                    <a href="#" onclick="Array.from(document.getElementsByClassName('update_user')).forEach(function(element) {element.classList.remove('show')});document.getElementById('orders_details').classList.add('show')">
                                         <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M16 5C16 4.85268 15.9398 4.71139 15.8326 4.60722C15.7255 4.50305 15.5802 4.44452 15.4286 4.44452L1.95175 4.44452L5.5481 0.949458C5.65539 0.845155 5.71566 0.703687 5.71566 0.55618C5.71566 0.408672 5.65539 0.267206 5.5481 0.162902C5.4408 0.0585983 5.29528 7.3311e-07 5.14355 7.3943e-07C4.99182 7.4575e-07 4.8463 0.0585983 4.739 0.162902L0.167868 4.60672C0.114656 4.65832 0.0724382 4.71962 0.0436327 4.7871C0.0148272 4.85459 -2.32709e-07 4.92694 -2.29358e-07 5C-2.26006e-07 5.07307 0.0148272 5.14541 0.0436327 5.2129C0.0724382 5.28038 0.114656 5.34168 0.167868 5.39328L4.739 9.8371C4.79213 9.88874 4.8552 9.92971 4.92461 9.95766C4.99402 9.98561 5.06842 10 5.14355 10C5.29528 10 5.4408 9.9414 5.5481 9.8371C5.65539 9.73279 5.71566 9.59133 5.71566 9.44382C5.71566 9.29631 5.65539 9.15485 5.5481 9.05054L1.95175 5.55548L15.4286 5.55548C15.5802 5.55548 15.7255 5.49695 15.8326 5.39278C15.9398 5.28861 16 5.14732 16 5Z" fill="#606E7D"/>
                                         </svg>
                                     </a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <form id="orders_details" class="text-right forms update_user p-5" method="" action="">
+                        <div class="form-group mb-5">
+                            <ul class="nav nav-pills order_details_type w-100" id="order_details" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <input type="radio" name="order_details_type" value="1" id="order_details_type1" hidden>
+                                    <a class="nav-link active" id="order_details_tab_1" data-mdb-toggle="pill" onclick="document.getElementById('order_details_type1').click();document.getElementById('order_details_tab_2').classList.remove('active'); document.getElementById('order_details_tab_1').classList.add('active')" href="#ex1-pills-1" role="tab" aria-controls="ex1-pills-1" aria-selected="true">تفاصيل الطلب</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <input type="radio" name="order_type" value="2" id="order_details_type2" hidden>
+                                    <a class="nav-link" id="order_details_tab_2" data-mdb-toggle="pill" onclick="document.getElementById('order_details_type2').click();document.getElementById('order_details_tab_1').classList.remove('active'); document.getElementById('order_details_tab_2').classList.add('active')" href="#ex1-pills-2" role="tab" aria-controls="ex1-pills-2" aria-selected="false">العروض المقدمة</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="details mb-2">
+                            <div class="row">
+                                <div class="col-12">
+                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.7304 0.427925C7.45657 0.15401 7.08515 8.27187e-05 6.69783 0H1.4605C1.07315 0 0.701665 0.153873 0.427769 0.427769C0.153873 0.701665 0 1.07315 0 1.4605V6.69783C8.27187e-05 7.08515 0.15401 7.45657 0.427925 7.7304L6.26991 13.5724C6.54379 13.8462 6.91521 14 7.30248 14C7.68975 14 8.06116 13.8462 8.33505 13.5724L13.5724 8.33505C13.8462 8.06116 14 7.68975 14 7.30248C14 6.91521 13.8462 6.54379 13.5724 6.26991L7.7304 0.427925ZM3.65124 5.11173C3.26379 5.11164 2.89226 4.95763 2.61836 4.6836C2.34447 4.40957 2.19065 4.03795 2.19074 3.65051C2.19084 3.26306 2.34485 2.89153 2.61888 2.61763C2.89291 2.34374 3.26453 2.18992 3.65197 2.19001C4.03941 2.19011 4.41095 2.34411 4.68485 2.61815C4.95874 2.89218 5.11256 3.26379 5.11247 3.65124C5.11237 4.03868 4.95836 4.41022 4.68433 4.68412C4.4103 4.95801 4.03868 5.11183 3.65124 5.11173Z" fill="#606E7D"/>
+                                    </svg>
+                                    <span>5264 #</span>
+                                    <svg class="mr-3" width="11" height="14" viewBox="0 0 11 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M5.999 3.5V0H3.499C3.10118 0 2.71964 0.158035 2.43834 0.43934C2.15704 0.720644 1.999 1.10218 1.999 1.5V10.5C1.999 10.8978 2.15704 11.2794 2.43834 11.5607C2.71964 11.842 3.10118 12 3.499 12H9.5C9.89782 12 10.2794 11.842 10.5607 11.5607C10.842 11.2794 11 10.8978 11 10.5V5H7.498C7.10018 5 6.71864 4.84196 6.43734 4.56066C6.15604 4.27936 5.998 3.89782 5.998 3.5H5.999ZM6.999 3.5V0.25L10.749 4H7.499C7.36639 4 7.23921 3.94732 7.14545 3.85355C7.05168 3.75979 6.999 3.63261 6.999 3.5ZM0 3C0 2.73478 0.105357 2.48043 0.292893 2.29289C0.48043 2.10536 0.734784 2 1 2V10.5C1 11.163 1.26339 11.7989 1.73223 12.2678C2.20107 12.7366 2.83696 13 3.5 13H9C9 13.2652 8.89464 13.5196 8.70711 13.7071C8.51957 13.8946 8.26522 14 8 14H3.556C2.61289 14 1.70841 13.6254 1.04153 12.9585C0.374649 12.2916 0 11.3871 0 10.444V3Z" fill="#272265"/>
+                                    </svg>
+
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="row">
+                                <div class="col-12">
+                                    <h5 class="font-gray">
+                                        <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 0C5.87904 0.00245748 3.84566 0.831051 2.34592 2.30402C0.846168 3.77699 0.00251067 5.77405 8.51118e-06 7.85714C-0.00253177 9.55945 0.56363 11.2156 1.61164 12.5714C1.61164 12.5714 1.82982 12.8536 1.86546 12.8943L8 20L14.1374 12.8907C14.1694 12.8529 14.3884 12.5714 14.3884 12.5714L14.3891 12.5693C15.4366 11.214 16.0025 9.55866 16 7.85714C15.9975 5.77405 15.1538 3.77699 13.6541 2.30402C12.1543 0.831051 10.121 0.00245748 8 0ZM8 10.7143C7.42464 10.7143 6.86219 10.5467 6.3838 10.2328C5.9054 9.91882 5.53254 9.4726 5.31235 8.95052C5.09217 8.42845 5.03456 7.85397 5.14681 7.29974C5.25906 6.74551 5.53612 6.23642 5.94296 5.83684C6.34981 5.43726 6.86816 5.16514 7.43247 5.0549C7.99677 4.94466 8.58169 5.00124 9.11326 5.21749C9.64483 5.43374 10.0992 5.79994 10.4188 6.2698C10.7385 6.73965 10.9091 7.29205 10.9091 7.85714C10.9081 8.61461 10.6013 9.34079 10.056 9.8764C9.51062 10.412 8.77124 10.7133 8 10.7143Z" fill="#606E7D"/>
+                                        </svg>
+                                        عنوان الطلب
+                                    </h5>
+                                    <p class="pr-4 font-light-gray">السعودية - المدينة المنورة - شارع الملك فهد</p>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="row">
+                                <div class="col-12">
+                                    <h5 class="font-gray">
+                                        <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.11366 3.08906e-05C7.74865 -0.000271186 8.22845 -0.000499591 8.69114 0.110583C9.09929 0.20857 9.48947 0.370188 9.84735 0.589502C10.2531 0.838129 10.5922 1.17756 11.041 1.62678C11.0647 1.65049 11.0887 1.67451 11.113 1.69884L11.4142 2.00006L14.2413 2.00006C15.0463 2.00005 15.7106 2.00004 16.2518 2.04426C16.8139 2.09018 17.3306 2.18875 17.816 2.43604C18.5686 2.81953 19.1805 3.43145 19.564 4.1841C19.8113 4.66944 19.9099 5.18614 19.9558 5.74824C20 6.28943 20 6.95378 20 7.75874V10.2414C20 11.0463 20 11.7107 19.9558 12.2519C19.9099 12.814 19.8113 13.3307 19.564 13.816C19.1805 14.5687 18.5686 15.1806 17.816 15.5641C17.3306 15.8114 16.8139 15.9099 16.2518 15.9559C15.7106 16.0001 15.0463 16.0001 14.2413 16.0001H5.75873C4.95374 16.0001 4.28938 16.0001 3.74817 15.9559C3.18608 15.9099 2.66937 15.8114 2.18404 15.5641C1.43139 15.1806 0.819468 14.5687 0.435975 13.816C0.188684 13.3307 0.0901197 12.814 0.0441945 12.2519C-2.28137e-05 11.7107 -1.23241e-05 11.0463 4.31292e-07 10.2414V5.75876C-1.23241e-05 4.95379 -2.28137e-05 4.28943 0.0441945 3.74824C0.0901197 3.18614 0.188684 2.66944 0.435975 2.1841C0.819468 1.43145 1.43139 0.81953 2.18404 0.436037C2.66937 0.188746 3.18608 0.0901819 3.74817 0.0442567C4.28937 3.9354e-05 4.95373 4.98449e-05 5.7587 6.26003e-05L7.01178 6.30771e-05C7.04618 6.30771e-05 7.08014 4.68646e-05 7.11366 3.08906e-05Z" fill="#606E7D"/>
+                                        </svg>
+                                        ملحقات الخدمة
+                                    </h5>
+                                    <img src="assets/img/service1.png">
+                                    <img src="assets/img/service1.png">
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="row">
+                                <div class="col-12">
+                                    <h5 class="font-gray">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M14.2222 0H1.77778C1.30628 0 0.854097 0.187301 0.520699 0.520699C0.187301 0.854097 0 1.30628 0 1.77778V14.2222C0 14.6937 0.187301 15.1459 0.520699 15.4793C0.854097 15.8127 1.30628 16 1.77778 16H8.88889L16 8.88889V1.77778C16 1.30628 15.8127 0.854097 15.4793 0.520699C15.1459 0.187301 14.6937 0 14.2222 0ZM8 14.2222V8H14.2222L8 14.2222Z" fill="#606E7D"/>
+                                        </svg>
+                                        ملاحظات
+                                    </h5>
+                                    <p class="pr-4 font-light-gray">نرجو من سيادتكم الالتزام في وقت وتاريخ تسليم الخدمة
+                                        باسرع وقت ممكن ، دمتم بود.</p>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="row">
+                                <div class="col-12">
+                                    <h5 class="font-gray">
+                                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g filter="url(#filter0_d_722_16336)">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 0C7.34315 0 6 1.34315 6 3C6 3.39025 6.07451 3.76309 6.21009 4.10508C4.93647 4.45179 4 5.61653 4 7C4 8.06226 4.5521 8.99557 5.38499 9.52864C5.13986 9.96336 5 10.4653 5 11C5 11.5347 5.13986 12.0366 5.38499 12.4714C4.55209 13.0044 4 13.9377 4 15C4 16.6569 5.34315 18 7 18H11C12.0666 18 13.0032 17.4434 13.5351 16.6048C14.4338 17.4688 15.6549 18 17 18C19.7614 18 22 15.7614 22 13C22 10.2386 19.7614 8 17 8C15.9366 8 14.9507 8.33197 14.1404 8.89793C13.9822 8.73688 13.806 8.5936 13.615 8.47137C13.8601 8.03664 14 7.53465 14 7C14 6.60975 13.9255 6.23691 13.7899 5.89492C15.0635 5.54821 16 4.38347 16 3C16 1.34315 14.6569 0 13 0H9ZM12.7595 10.3495C12.5761 10.1356 12.3039 10 12 10H8C7.44772 10 7 10.4477 7 11C7 11.5523 7.44772 12 8 12H12C12.0341 12 12.0678 11.9983 12.101 11.995C12.2222 11.4014 12.4484 10.8462 12.7595 10.3495ZM12 7C12 6.44772 11.5523 6 11 6H7C6.44772 6 6 6.44772 6 7C6 7.55228 6.44772 8 7 8H11C11.5523 8 12 7.55228 12 7ZM9 4H13C13.5523 4 14 3.55228 14 3C14 2.44772 13.5523 2 13 2H9C8.44772 2 8 2.44772 8 3C8 3.55228 8.44772 4 9 4ZM12 15C12 14.4477 11.5523 14 11 14H7C6.44772 14 6 14.4477 6 15C6 15.5523 6.44772 16 7 16H11C11.5523 16 12 15.5523 12 15ZM14 13C14 11.3431 15.3431 10 17 10C18.6569 10 20 11.3431 20 13C20 14.6569 18.6569 16 17 16C15.3431 16 14 14.6569 14 13Z" fill="#606E7D"/>
+                                            </g>
+                                            <defs>
+                                                <filter id="filter0_d_722_16336" x="0" y="0" width="26" height="26" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                                    <feOffset dy="4"/>
+                                                    <feGaussianBlur stdDeviation="2"/>
+                                                    <feComposite in2="hardAlpha" operator="out"/>
+                                                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_722_16336"/>
+                                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_722_16336" result="shape"/>
+                                                </filter>
+                                            </defs>
+                                        </svg>
+                                        السعر المتوقع
+                                    </h5>
+                                    <p class="pr-4 font-light-gray">20 ر.س</p>
+                                </div>
+                            </div>
+                            <hr/>
+                            <div class="row">
+                                <div class="col-12 text-right pt-5">
+                                    <a class="btn detailed" href="#">
+                                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12.5126 4.16693C12.827 3.85191 13 3.43355 13 2.98852C13 2.5435 12.827 2.12514 12.5126 1.81012L11.1936 0.488365C10.8792 0.173344 10.4617 0 10.0176 0C9.57348 0 9.15597 0.173344 8.84243 0.487531L0 9.3206V13H3.67021L12.5126 4.16693ZM10.0176 1.66677L11.3375 2.98769L10.0151 4.30778L8.69605 2.98686L10.0176 1.66677ZM1.66336 11.3332V10.0123L7.51839 4.1636L8.83744 5.48535L2.98324 11.3332H1.66336Z" fill="#272265"/>
+                                        </svg>
+                                        تعديل الطلب</a>
+                                    <a class="btn detailed" href="#">
+                                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4.26156 15.1998L3.71824 4.33337H18.2824L17.7391 15.1998C17.6326 17.3286 15.8756 19 13.7441 19H8.25657C6.12507 19 4.368 17.3286 4.26156 15.1998Z" stroke="#272265" stroke-width="2"/>
+                                            <path d="M7.83301 4H14.1663V3C14.1663 1.89543 13.2709 1 12.1663 1H9.83301C8.72844 1 7.83301 1.89543 7.83301 3V4Z" stroke="#272265" stroke-width="2"/>
+                                            <path d="M1.83301 4.16663H20.1663" stroke="#272265" stroke-width="2" stroke-linecap="round"/>
+                                            <path d="M13.5 9.16663V13.3333" stroke="#272265" stroke-width="2" stroke-linecap="round"/>
+                                            <path d="M8.5 9.16663V13.3333" stroke="#272265" stroke-width="2" stroke-linecap="round"/>
+                                        </svg>
+                                        الغاء الطلب</a>
                                 </div>
                             </div>
                         </div>
@@ -752,6 +863,64 @@
                                     <p class="font-gray">الاثنين ، 16 فبراير 2022</p>
                                 </div>
                             </div>
+                        </div>
+                    </form>
+                    <form id="payments" class="text-right forms update_user p-5" method="" action="">
+                        <div class="row mb-5">
+                            <div class="col-3 text-center">
+                                <img src="assets/img/payment1.png">
+                            </div>
+                            <div class="col-6 text-center">
+                                <img src="assets/img/payment2.png">
+                            </div>
+                            <div class="col-3 text-center">
+                                <img src="assets/img/payment3.png">
+                            </div>
+                        </div>
+                        <h3>بيانات البطاقة</h3>
+                        <div class="form-group row">
+                            <div class="col-6">
+                                <input type="text" id="card_number" class="form-control" placeholder="رقم البطاقة">
+                            </div>
+                            <div class="col-6">
+                                <input type="text" id="card_username" class="form-control" placeholder="اسم صاحب البطاقة">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-3">
+                                <input type="text" id="cvv" class="form-control" placeholder="CVV">
+                            </div>
+                            <div class="col-3">
+                                <input type="date" id="expire_date" class="form-control" placeholder="الشهر/ السنة">
+                            </div>
+                            <div class="col-3">
+                                    <label for="val">قيمة المبلغ</label>
+                            </div>
+                            <div class="col-3">
+                                    <input type="text" id="val" class="form-control" placeholder="ر.س">
+                                </div>
+                        </div>
+                        <div class="form-group mt-5">
+                            <button type="button" class="logged_btn">تأكيد الدفع</button>
+                        </div>
+                    </form>
+                    <form id="settings" class="text-right forms update_user p-5" method="" action="">
+                        <div class="form-group">
+                            <label>اللغة</label>
+                            <ul class="nav nav-pills lang_type w-100" id="lang" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <input type="radio" name="user_type" value="1" id="lang_type1" hidden>
+                                    <a class="nav-link active" id="lang-tab-1" data-mdb-toggle="pill" onclick="document.getElementById('lang_type1').click();document.getElementById('lang-tab-2').classList.remove('active'); document.getElementById('lang-tab-3').classList.remove('active'); document.getElementById('lang-tab-1').classList.add('active')" href="#ex1-pills-1" role="tab" aria-controls="ex1-pills-1" aria-selected="true">العربية</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <input type="radio" name="user_type" value="2" id="lang_type2" hidden>
+                                    <a class="nav-link" id="lang-tab-2" data-mdb-toggle="pill" onclick="document.getElementById('lang_type2').click();document.getElementById('lang-tab-1').classList.remove('active');document.getElementById('lang-tab-3').classList.remove('active'); document.getElementById('lang-tab-2').classList.add('active')" href="#ex1-pills-2" role="tab" aria-controls="ex1-pills-2" aria-selected="false">الانجليزية</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <input type="radio" name="user_type" value="3" id="lang_type3" hidden>
+                                    <a class="nav-link" id="lang-tab-3" data-mdb-toggle="pill" onclick="document.getElementById('lang_type3').click();document.getElementById('lang-tab-1').classList.remove('active'); document.getElementById('lang-tab-2').classList.remove('active'); document.getElementById('lang-tab-3').classList.add('active')" href="#ex1-pills-3" role="tab" aria-controls="ex1-pills-2" aria-selected="false">الاوردو</a>
+                                </li>
+                            </ul>
                         </div>
                     </form>
                 </div>

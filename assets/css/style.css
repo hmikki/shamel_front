@@ -973,6 +973,9 @@ ul#transfer {
 .font-gray{
     color: #606E7D;
 }
+.font-light-gray{
+    color: #B5BEC8;
+}
 #completeOrder .close{
     position: absolute;
     left: 0;
@@ -1017,6 +1020,8 @@ form.update_user button.logged_btn{
     color: white;
     width: 340px;
     height: 50px;
+    position: absolute;
+    bottom: 15px;
 }
 .shadow_box{
     background: #FFFFFF;
@@ -1029,12 +1034,16 @@ form.update_user button.logged_btn{
 .tab_form form{
     display: none;
 }
-.order_type.nav-pills .nav-item{
+.order_type.nav-pills .nav-item, .lang_type.nav-pills .nav-item{
     width: 33%;
     text-align: center;
 }
-.order_type.nav-pills{
+.order_type.nav-pills,.order_details_type.nav-pills,.lang_type.nav-pills{
     padding: 10px !important;
+}
+.order_details_type.nav-pills .nav-item{
+    width: 50%;
+    text-align: center;
 }
 .order_item, .address_item {
     background: #F8F8F8;
@@ -1059,6 +1068,11 @@ form.update_user button.logged_btn{
     font-size: 18px;
     position: absolute;
     bottom: 15px;
+}
+.add_address:hover, .add_address:active{
+    background: #272265;
+    color: white;
+    font-size: 16px;
 }
 .transaction_header{
     background: #F8F8F8;
@@ -1092,4 +1106,26 @@ form.update_user button.logged_btn{
     overflow-x: hidden;
     padding: 5px;
 }
-
+form#payments input[type="text"],
+form#payments input[type="tel"]{
+    width: 100%;
+}
+.lang_type.nav-pills{
+    background: #F8F8F8;
+    border-radius: 10px;
+    padding: 0px !important;
+    height: 55px;
+}
+.lang_type.nav-pills .nav-item{
+    padding: 10px;
+}
+.lang_type.nav-pills .nav-link{
+    height: 100%;
+}
+.lang_type.nav-pills .nav-link.active{
+    border-radius: 10px;
+}
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.1rem #272265;
+}
