@@ -1143,8 +1143,10 @@ form#payments input[type="tel"]{
 .font-yellow{
     color: #F3AD39;
 }
-.ticket{
+.ticket, .ticket:hover, .ticket:active, .ticket:focus{
     border-radius: 50%;
+    border: none;
+    outline: unset;
 }
 .offer{
     color: #272265;
@@ -1168,9 +1170,56 @@ form#payments input[type="tel"]{
 .attachments.inprogress li{
     margin-left: 2px;
 }
-.review{
+.review, .review:hover, .review:active{
     background: #F8F8F8;
     border: 1px solid #F3AD39;
     border-radius: 25px;
     color: #F3AD39;
+}
+.review:focus {
+    outline: unset;
+    box-shadow: unset;
+}
+.update_user.add_balance input{
+    width: 100% !important;
+}
+.confirm_btn{
+    background: #272265;
+    border-radius: 11px;
+    color: white;
+    width: 100%;
+    height: 50px;
+}
+.add_transaction:hover, .add_transaction:active{
+    color: white;
+    font-size: 14px;
+}
+.review_area{
+    height: 100px !important;
+    background: #F8F8F8;
+    border-radius: 10px;
+}
+.review_service .add_transaction{
+    border-radius: 10px !important;
+}
+.ticket_area{
+    height: 160px !important;
+    background: #F8F8F8;
+    border-radius: 10px;
+}
+.category_hint{
+    background: #F8F8F8;
+    border-radius: 15px;
+    padding: 5px;
+}
+.offer_table .table_content{
+    background: #F8F8F8;
+    border-radius: 11px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    text-align: center;
+    padding: 10px 0px;
+}
+.table_header {
+    margin-top: 20px;
 }
