@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>Shamel</title>
+    <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../assets/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+          integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+          integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href='https://fonts.googleapis.com/css?family=Cairo' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, height=device-height initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper/css/parallax"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/6.4.1/css/intlTelInput.css">
+</head>
+<body>
+<div class="chatboot-section">
+    <div class="chatboot-icon" onclick="document.getElementById('chatboot').classList.toggle('show');">
+        <img src="../assets/img/Group%201799.png">
+    </div>
+    <div class="chatboot" id="chatboot">
+        <div class="col-12 left">
+            البدء من جديد
+        </div>
+        <div class="col-12 right">
+            مساء الخير <span>مساء الخير</span>
+        </div>
+        <div class="col-12 left list">
+            كيف أستطيع أخدمك اليوم؟
+            <ul>
+                <li>طلباتي السابقة</li>
+                <li>طلب جديد</li>
+                <li>توصيل طرد</li>
+                <li>أحتاج المساعدة</li>
+            </ul>
+        </div>
+        <div class="col-12 right user">طلب جديد</div>
+    </div>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-light pr-5 pl-5">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="index.html"><img src="../assets/img/logo.png" width="160px" height="53px"></a>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03" dir="rtl">
+        <ul class="navbar-nav mr-md-0 mr-lg-5 pr-lg-5 pl-lg-5 mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">الرئيسية <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="services.html">الخدمات</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">من نحن</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Faqs.html">الأسئلة الشائعة</a>
+            </li>
+        </ul>
+        <button class="btn btn-outline-success my-2 my-sm-0 mr-auto login-btn" data-toggle="modal" data-target="#loginModal"><i class="fa-solid fa-user"></i> تسجيل الدخول</button>
+        <div class="modal fade bd-example-modal-lg" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="row">
+                        <div class="col-6 text-right">
+                            <form class="loginForm p-5">
+                                <h2>أهلا بعودتك</h2>
+                                <a href="#">سجل دخولك الآن</a>
+                                <span>/</span>
+                                <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#registerModal">تسجيل جديد</a>
+                                <!-- Pills navs -->
+                                <ul class="nav nav-pills mt-5 mb-5" id="ex1" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link" id="ex1-tab-1" data-mdb-toggle="pill" onclick="document.getElementById('ex1-tab-2').classList.remove('active'); document.getElementById('ex1-tab-1').classList.add('active')" href="#ex1-pills-1" role="tab" aria-controls="ex1-pills-1" aria-selected="true">طالب خدمة</a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link active" id="ex1-tab-2" data-mdb-toggle="pill" onclick="document.getElementById('ex1-tab-1').classList.remove('active'); document.getElementById('ex1-tab-2').classList.add('active')" href="#ex1-pills-2" role="tab" aria-controls="ex1-pills-2" aria-selected="false">مقدم خدمة</a>
+                                    </li>
+                                </ul>
+                                <!-- Pills navs -->
+
+                                <!-- Pills content -->
+                                <div class="tab-content" id="ex1-content">
+                                    <div class="tab-pane fade show active" id="ex1-pills-1" role="tabpanel" aria-labelledby="ex1-tab-1" >
+                                        <label>رقم الجوال</label>
+                                        <div class="form-group mob_field mb-5">
+                                            <input type="tel" id="mobile-number" type="text" class="form-control bg-light" placeholder="05 xx xxxxx">
+                                        </div>
+                                        <button type="button" data-dismiss="modal" class="logged_btn"  data-toggle="modal" data-target="#confirmModal">تسجيل الدخول</button>
+
+                                    </div>
+                                </div>
+                                <!-- Pills content -->
+
+                            </form>
+                        </div>
+                        <div class="col-6">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <img src="../assets/img/Group%202108.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade bd-example-modal-lg" id="confirmModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header p-3">
+                        <div class="row w-100">
+                            <div class="col-4 text-right">
+                                <button class="btn my-2 my-sm-0 mr-auto" data-dismiss="modal" data-toggle="modal" data-target="#loginModal"><i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+                            </div>
+                            <div class="col-4 text-center">
+                                <h6>تأكيد الحساب</h6>
+                            </div>
+                            <div class="col-4 text-left">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <i aria-hidden="true" class="fa-solid fa-xmark"></i>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <form class="confirmForm p-5">
+                                    <h2>تأكيد رقم الجوال</h2>
+                                    <p class="text-center">قم بإدخال الأرقام التي وصلتك على الهاتف 05563980214</p>
+                                    <div class="code_group">
+                                        <input type="text" name="code" class="form-control bg-light">
+                                        <input type="text" name="code" class="form-control bg-light">
+                                        <input type="text" name="code" class="form-control bg-light">
+                                        <input type="text" name="code" class="form-control bg-light">
+                                    </div>
+
+                                    <button type="submit" class="btn"><i class="fa-sharp fa-solid fa-circle-arrow-right"></i> تأكيد الكود</button>
+                                    <p class="text-centert"><i class="fa-solid fa-clock"></i>00:57</p>
+                                    <p class="text-center">لم يصلني كود التاكيد على رقم الهاتف
+                                        <a href="#">اعادة ارسال</a>
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade bd-example-modal-lg" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header p-3">
+                        <div class="row w-100">
+                            <div class="col-4">
+                            </div>
+                            <div class="col-4">
+                            </div>
+                            <div class="col-4 text-left">
+                                <button type="button" class="close float-left" data-dismiss="modal" aria-label="Close">
+                                    <i aria-hidden="true" class="fa-solid fa-xmark"></i>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div id="profile" class="col-12 text-center tabcontent">
+                                <h2 class="text-right">انضم الينا</h2>
+                                <p class="text-right">انشأ حسابك الان لتتمكن من تقديم خدماتك</p>
+
+                                <form class="registerForm p-3">
+                                    <div class="row pt-2">
+                                        <div class="col-4 text-right">
+                                            <a href="#" onclick="openTab(event, 'profile')">
+                                            <svg width="297" height="50" viewBox="0 0 200 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <line x1="200" y1="25.5" x2="-5.96046e-07" y2="25.5" stroke="#272265"/>
+                                                <rect x="150.5" y="0.5" width="49" height="49" rx="24.5" fill="#272265" stroke="#272265"/>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M170.15 20.25C170.15 17.3505 172.5 15 175.4 15C178.299 15 180.65 17.3505 180.65 20.25C180.65 23.1495 178.299 25.5 175.4 25.5C172.5 25.5 170.15 23.1495 170.15 20.25ZM167 32.75C167 29.8505 169.351 27.5 172.25 27.5H178.55C181.449 27.5 183.8 29.8505 183.8 32.75C183.8 34.4897 182.39 35.9 180.65 35.9H170.15C168.41 35.9 167 34.4897 167 32.75Z" fill="white"/>
+                                            </svg>
+                                            </a>
+                                            <p>بياناتي</p>
+                                        </div>
+                                        <div class="col-4 text-right">
+                                            <a href="#" onclick="openTab(event, 'services')">
+                                            <svg width="297" height="50" viewBox="0 0 297 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <line x1="246" y1="25.5" x2="-5.96046e-07" y2="25.5" stroke="#F6F6F6"/>
+                                                <rect x="247" width="50" height="50" rx="25" fill="#F7F7F7"/>
+                                                <path d="M273.952 26.5601L275.212 24.3778C275.293 24.2425 275.257 24.0711 275.14 23.9719L273.808 22.9259C273.835 22.7275 273.853 22.52 273.853 22.3126C273.853 22.1052 273.835 21.8978 273.808 21.6904L275.14 20.6443C275.257 20.5451 275.293 20.3737 275.212 20.2385L273.952 18.0561C273.871 17.9208 273.709 17.8667 273.565 17.9208L271.999 18.5521C271.675 18.2996 271.324 18.0922 270.937 17.9299L270.703 16.2615C270.688 16.1886 270.648 16.123 270.591 16.0754C270.534 16.0279 270.462 16.0013 270.388 16H267.868C267.715 16 267.58 16.1172 267.553 16.2705L267.319 17.9389C266.941 18.1012 266.581 18.3086 266.257 18.5611L264.691 17.9299C264.547 17.8758 264.385 17.9299 264.304 18.0651L263.044 20.2475C262.963 20.3828 262.999 20.5541 263.116 20.6533L264.448 21.6994C264.421 21.8978 264.403 22.1052 264.403 22.3126C264.403 22.52 264.421 22.7275 264.448 22.9349L263.116 23.981C262.999 24.0802 262.963 24.2515 263.044 24.3868L264.304 26.5691C264.385 26.7044 264.547 26.7585 264.691 26.7044L266.257 26.0731C266.581 26.3257 266.932 26.5331 267.319 26.6954L267.553 28.3637C267.58 28.508 267.715 28.6253 267.868 28.6253H270.388C270.541 28.6253 270.676 28.508 270.703 28.3547L270.937 26.6864C271.315 26.524 271.675 26.3166 271.999 26.0641L273.565 26.6954C273.709 26.7495 273.871 26.6954 273.952 26.5601V26.5601ZM269.128 24.1162C268.138 24.1162 267.328 23.3046 267.328 22.3126C267.328 21.3206 268.138 20.509 269.128 20.509C270.118 20.509 270.928 21.3206 270.928 22.3126C270.928 23.3046 270.118 24.1162 269.128 24.1162ZM280.926 31.0331L280.063 30.3657C280.081 30.2395 280.099 30.1042 280.099 29.9689C280.099 29.8337 280.09 29.6984 280.063 29.5721L280.917 28.9048C280.989 28.8417 281.016 28.7335 280.962 28.6433L280.153 27.2455C280.108 27.1553 280 27.1283 279.901 27.1553L278.902 27.5611C278.695 27.3988 278.47 27.2635 278.218 27.1643L278.065 26.1002C278.061 26.052 278.04 26.0068 278.005 25.9735C277.97 25.9402 277.924 25.9211 277.876 25.9198H276.265C276.166 25.9198 276.076 25.992 276.067 26.0912L275.914 27.1553C275.671 27.2635 275.437 27.3898 275.23 27.5521L274.231 27.1463C274.185 27.129 274.134 27.1286 274.088 27.1451C274.042 27.1616 274.003 27.194 273.979 27.2365L273.169 28.6343C273.124 28.7245 273.133 28.8327 273.214 28.8958L274.069 29.5631C274.031 29.8263 274.031 30.0935 274.069 30.3567L273.214 31.024C273.142 31.0872 273.115 31.1954 273.169 31.2856L273.979 32.6834C274.024 32.7735 274.132 32.8006 274.231 32.7735L275.23 32.3677C275.437 32.5301 275.662 32.6653 275.914 32.7645L276.067 33.8287C276.085 33.9279 276.166 34 276.265 34H277.876C277.975 34 278.065 33.9279 278.074 33.8287L278.227 32.7645C278.47 32.6563 278.704 32.5301 278.902 32.3677L279.91 32.7735C280 32.8096 280.108 32.7735 280.162 32.6834L280.971 31.2856C281.025 31.2044 280.998 31.0962 280.926 31.0331V31.0331ZM277.066 31.1774C276.743 31.1772 276.434 31.0488 276.206 30.8203C275.978 30.5918 275.85 30.282 275.851 29.959C275.851 29.636 275.979 29.3263 276.207 29.098C276.435 28.8697 276.744 28.7415 277.066 28.7416C277.389 28.7417 277.698 28.8701 277.926 29.0986C278.154 29.3271 278.282 29.6369 278.281 29.9599C278.281 30.2829 278.153 30.5927 277.925 30.821C277.697 31.0493 277.388 31.1775 277.066 31.1774V31.1774Z" fill="#606E7D"/>
+                                            </svg>
+                                            </a>
+                                            <p>خدماتي</p>
+                                        </div>
+                                        <div class="col-4 text-right">
+                                            <a href="#" onclick="openTab(event, 'my_address')">
+                                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="50" height="50" rx="25" fill="#F7F7F7"/>
+                                                <path d="M25 34.0035C23.7369 32.9261 22.5662 31.745 21.5 30.4725C19.9 28.5615 18 25.7155 18 23.0035C17.9993 21.6185 18.4095 20.2644 19.1787 19.1125C19.9479 17.9607 21.0415 17.063 22.3211 16.5329C23.6007 16.0028 25.0087 15.8643 26.3671 16.1348C27.7255 16.4053 28.9731 17.0727 29.952 18.0525C30.6038 18.7014 31.1203 19.473 31.4719 20.3229C31.8234 21.1727 32.0029 22.0838 32 23.0035C32 25.7155 30.1 28.5615 28.5 30.4725C27.4338 31.745 26.2631 32.9261 25 34.0035ZM25 20.0035C24.2044 20.0035 23.4413 20.3196 22.8787 20.8822C22.3161 21.4448 22 22.2079 22 23.0035C22 23.7992 22.3161 24.5622 22.8787 25.1248C23.4413 25.6874 24.2044 26.0035 25 26.0035C25.7957 26.0035 26.5587 25.6874 27.1213 25.1248C27.6839 24.5622 28 23.7992 28 23.0035C28 22.2079 27.6839 21.4448 27.1213 20.8822C26.5587 20.3196 25.7957 20.0035 25 20.0035Z" fill="#606E7D"/>
+                                            </svg>
+                                            </a>
+                                            <p>عنواني</p>
+                                        </div>
+                                    </div>
+                                        <div class="row pt-2">
+                                            <div class="col-3"></div>
+                                            <div class="col-6">
+                                                <ul class="nav nav-pills register_user_type" id="users" role="tablist">
+                                                    <li class="nav-item col-6">
+                                                        <input type="radio" name="user_type" value="1" id="user_type1" hidden>
+                                                        <a class="nav-link active" id="pills-person-tab" data-toggle="pill" href="#person" role="tab" aria-controls="pills-person" aria-selected="true">فرد</a>
+                                                    </li>
+                                                    <li class="nav-item col-6">
+                                                        <input type="radio" name="user_type" value="2" id="user_type2" hidden>
+                                                        <a class="nav-link" id="pills-company-tab" data-toggle="pill" href="#company" role="tab" aria-controls="pills-company" aria-selected="false">مندوب</a>
+                                                    </li>
+                                                </ul>                                        </div>
+                                            <div class="col-3"></div>
+                                        </div>
+                                    <div class="tab-content tab" id="pills-tabContent">
+                                        <div id="person" class="tab-pane fade show active details mb-2" role="tabpanel" aria-labelledby="pills-person-tab">
+                                        <div class="row pt-2">
+                                        <div class="col-6 text-right">
+                                            <label for="provider_name">
+                                                الاسم
+                                                <span class="font-gray">(مقدم الخدمة)</span>
+                                            </label>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <label for="provider_id">رقم الهوية</label>
+                                        </div>
+                                    </div>
+                                        <div class="row">
+                                        <div class="col-6 text-right">
+                                            <input type="text" class="form-control" name="provider_name" id="provider_name" placeholder="يرجى ادخال اسم مقدم الخدمة">
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <input type="text" class="form-control" name="provider_name" id="provider_id" placeholder="يرجى ادخال رقم الهوية">
+                                        </div>
+                                    </div>
+                                        <div class="row">
+                                        <div class="col-6 text-right">
+                                            <label for="freelancer_certificate">
+                                                شهادة العمل الحر
+                                            </label>
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <label for="provider_id_photo">صورة الهوية</label>
+                                        </div>
+                                    </div>
+                                        <div class="row">
+                                        <div class="col-6 text-right">
+                                            <input type="file" class="form-control" name="provider_name" id="freelancer_certificate">
+                                        </div>
+                                        <div class="col-6 text-right">
+                                            <input type="file" class="form-control" name="provider_name" id="provider_id_photo">
+                                        </div>
+                                    </div>
+                                        <div class="row pt-2">
+                                        <div class="col-12 text-right">
+                                            <input type="checkbox" id="confirm_controls" name="confirm_controls" required>
+                                            <label for="confirm_controls">
+                                                أوافق على
+                                                <a class="link" href="../privacy.html">شروط الاستخدام</a>
+                                            </label>
+                                        </div>
+                                    </div>
+                                        </div>
+                                        <div id="company" class="tab-pane fade details mb-2" role="tabpanel" aria-labelledby="pills-company-tab">
+                                                <div class="row pt-2">
+                                                    <div class="col-6 text-right">
+                                                        <label for="company_name">
+                                                            اسم الشركة
+                                                            <span class="font-gray">(مقدم الخدمة)</span>
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-6 text-right">
+                                                        <label for="company_manager_name">اسم مدير الشركة</label>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-6 text-right">
+                                                        <input type="text" class="form-control" name="provider_name" id="company_name" placeholder="يرجى ادخال اسم الشركة">
+                                                    </div>
+                                                    <div class="col-6 text-right">
+                                                        <input type="text" class="form-control" name="provider_name" id="company_manager_name" placeholder="يرجى ادخال اسم مدير الشركة">
+                                                    </div>
+                                                </div>
+                                                <div class="row pt-2">
+                                                    <div class="col-6 text-right">
+                                                        <label for="company_description">
+                                                            وصف بسيط عن نشاط الشركة
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-6 text-right">
+                                                        <label for="commercial_record_number">رقم السجل التجاري</label>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-6 text-right">
+                                                        <textarea name="company_description" id="company_description" class="form-control" placeholder="يرجى اضافة وصف بسيط عن نشاط الشركة"></textarea>
+                                                    </div>
+                                                    <div class="col-6 text-right">
+                                                        <input type="text" class="form-control" name="commercial_record_number" id="commercial_record_number" placeholder="يرجى ادخال رقم السجل التجاري">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-6 text-right">
+                                                        <label for="manager_id_photo">
+                                                            هوية مدير الشركة
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-6 text-right">
+                                                        <label for="commercial_record_photo">صورة السجل التجاري</label>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-6 text-right">
+                                                        <input type="file" class="form-control" name="manager_id_photo" id="manager_id_photo">
+                                                    </div>
+                                                    <div class="col-6 text-right">
+                                                        <input type="file" class="form-control" name="commercial_record_photo" id="commercial_record_photo">
+                                                    </div>
+                                                </div>
+                                                <div class="row pt-2">
+                                                    <div class="col-12 text-right">
+                                                        <input type="checkbox" id="confirm_controls1" name="confirm_controls" required>
+                                                        <label for="confirm_controls">
+                                                            أوافق على
+                                                            <a class="link" href="../privacy.html">شروط الاستخدام</a>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <hr/>
+                                                <div class="row">
+                                                    <div class="col-12 text-right">
+                                                        <a type="button" class="btn logged_btn" data-toggle="pill" href="#services" role="tab" aria-controls="pills-company" aria-selected="false">التالي
+                                                            <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16 5C16 4.85268 15.9398 4.71139 15.8326 4.60722C15.7255 4.50305 15.5802 4.44452 15.4286 4.44452L1.95175 4.44452L5.5481 0.949458C5.65539 0.845155 5.71566 0.703687 5.71566 0.55618C5.71566 0.408672 5.65539 0.267206 5.5481 0.162902C5.4408 0.0585983 5.29528 7.3311e-07 5.14355 7.3943e-07C4.99182 7.4575e-07 4.8463 0.0585983 4.739 0.162902L0.167868 4.60672C0.114656 4.65832 0.0724382 4.71962 0.0436327 4.7871C0.0148272 4.85459 -2.32709e-07 4.92694 -2.29358e-07 5C-2.26006e-07 5.07307 0.0148272 5.14541 0.0436327 5.2129C0.0724382 5.28038 0.114656 5.34168 0.167868 5.39328L4.739 9.8371C4.79213 9.88874 4.8552 9.92971 4.92461 9.95766C4.99402 9.98561 5.06842 10 5.14355 10C5.29528 10 5.4408 9.9414 5.5481 9.8371C5.65539 9.73279 5.71566 9.59133 5.71566 9.44382C5.71566 9.29631 5.65539 9.15485 5.5481 9.05054L1.95175 5.55548L15.4286 5.55548C15.5802 5.55548 15.7255 5.49695 15.8326 5.39278C15.9398 5.28861 16 5.14732 16 5Z" fill="#606E7D"/>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
+                                        <hr/>
+                                        <div class="row">
+                                        <div class="col-12 text-right tab">
+                                            <button type="button" class="btn logged_btn tablinks" onclick="openTab(event, 'services')">التالي
+                                                <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16 5C16 4.85268 15.9398 4.71139 15.8326 4.60722C15.7255 4.50305 15.5802 4.44452 15.4286 4.44452L1.95175 4.44452L5.5481 0.949458C5.65539 0.845155 5.71566 0.703687 5.71566 0.55618C5.71566 0.408672 5.65539 0.267206 5.5481 0.162902C5.4408 0.0585983 5.29528 7.3311e-07 5.14355 7.3943e-07C4.99182 7.4575e-07 4.8463 0.0585983 4.739 0.162902L0.167868 4.60672C0.114656 4.65832 0.0724382 4.71962 0.0436327 4.7871C0.0148272 4.85459 -2.32709e-07 4.92694 -2.29358e-07 5C-2.26006e-07 5.07307 0.0148272 5.14541 0.0436327 5.2129C0.0724382 5.28038 0.114656 5.34168 0.167868 5.39328L4.739 9.8371C4.79213 9.88874 4.8552 9.92971 4.92461 9.95766C4.99402 9.98561 5.06842 10 5.14355 10C5.29528 10 5.4408 9.9414 5.5481 9.8371C5.65539 9.73279 5.71566 9.59133 5.71566 9.44382C5.71566 9.29631 5.65539 9.15485 5.5481 9.05054L1.95175 5.55548L15.4286 5.55548C15.5802 5.55548 15.7255 5.49695 15.8326 5.39278C15.9398 5.28861 16 5.14732 16 5Z" fill="#606E7D"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    </form>
+                                    </div>
+                            <div style="display: none" id="services" class="col-12 text-center tabcontent" role="tabpanel" aria-labelledby="pills-services-tab">
+                                        <h2 class="text-right">انضم الينا</h2>
+                                        <p class="text-right">انشأ حسابك الان لتتمكن من تقديم خدماتك</p>
+
+                                        <form class="registerForm p-3">
+                                            <div class="row pt-2">
+                                                <div class="col-4 text-right">
+                                                    <a href="#" onclick="openTab(event, 'profile')">
+                                                        <svg width="297" height="50" viewBox="0 0 200 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <line x1="200" y1="25.5" x2="-5.96046e-07" y2="25.5" stroke="#272265"/>
+                                                            <rect x="150.5" y="0.5" width="49" height="49" rx="24.5" fill="#272265" stroke="#272265"/>
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M170.15 20.25C170.15 17.3505 172.5 15 175.4 15C178.299 15 180.65 17.3505 180.65 20.25C180.65 23.1495 178.299 25.5 175.4 25.5C172.5 25.5 170.15 23.1495 170.15 20.25ZM167 32.75C167 29.8505 169.351 27.5 172.25 27.5H178.55C181.449 27.5 183.8 29.8505 183.8 32.75C183.8 34.4897 182.39 35.9 180.65 35.9H170.15C168.41 35.9 167 34.4897 167 32.75Z" fill="white"/>
+                                                        </svg>
+                                                    </a>
+                                                    <p>بياناتي</p>
+                                                </div>
+                                                <div class="col-4 text-right">
+                                                    <a href="#" onclick="openTab(event, 'services')">
+                                                        <svg width="297" height="50" viewBox="0 0 297 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <line x1="246" y1="25.5" x2="-5.96046e-07" y2="25.5" stroke="#F6F6F6"/>
+                                                            <rect x="247" width="50" height="50" rx="25" fill="#272265"/>
+                                                            <path d="M273.952 26.5601L275.212 24.3778C275.293 24.2425 275.257 24.0711 275.14 23.9719L273.808 22.9259C273.835 22.7275 273.853 22.52 273.853 22.3126C273.853 22.1052 273.835 21.8978 273.808 21.6904L275.14 20.6443C275.257 20.5451 275.293 20.3737 275.212 20.2385L273.952 18.0561C273.871 17.9208 273.709 17.8667 273.565 17.9208L271.999 18.5521C271.675 18.2996 271.324 18.0922 270.937 17.9299L270.703 16.2615C270.688 16.1886 270.648 16.123 270.591 16.0754C270.534 16.0279 270.462 16.0013 270.388 16H267.868C267.715 16 267.58 16.1172 267.553 16.2705L267.319 17.9389C266.941 18.1012 266.581 18.3086 266.257 18.5611L264.691 17.9299C264.547 17.8758 264.385 17.9299 264.304 18.0651L263.044 20.2475C262.963 20.3828 262.999 20.5541 263.116 20.6533L264.448 21.6994C264.421 21.8978 264.403 22.1052 264.403 22.3126C264.403 22.52 264.421 22.7275 264.448 22.9349L263.116 23.981C262.999 24.0802 262.963 24.2515 263.044 24.3868L264.304 26.5691C264.385 26.7044 264.547 26.7585 264.691 26.7044L266.257 26.0731C266.581 26.3257 266.932 26.5331 267.319 26.6954L267.553 28.3637C267.58 28.508 267.715 28.6253 267.868 28.6253H270.388C270.541 28.6253 270.676 28.508 270.703 28.3547L270.937 26.6864C271.315 26.524 271.675 26.3166 271.999 26.0641L273.565 26.6954C273.709 26.7495 273.871 26.6954 273.952 26.5601V26.5601ZM269.128 24.1162C268.138 24.1162 267.328 23.3046 267.328 22.3126C267.328 21.3206 268.138 20.509 269.128 20.509C270.118 20.509 270.928 21.3206 270.928 22.3126C270.928 23.3046 270.118 24.1162 269.128 24.1162ZM280.926 31.0331L280.063 30.3657C280.081 30.2395 280.099 30.1042 280.099 29.9689C280.099 29.8337 280.09 29.6984 280.063 29.5721L280.917 28.9048C280.989 28.8417 281.016 28.7335 280.962 28.6433L280.153 27.2455C280.108 27.1553 280 27.1283 279.901 27.1553L278.902 27.5611C278.695 27.3988 278.47 27.2635 278.218 27.1643L278.065 26.1002C278.061 26.052 278.04 26.0068 278.005 25.9735C277.97 25.9402 277.924 25.9211 277.876 25.9198H276.265C276.166 25.9198 276.076 25.992 276.067 26.0912L275.914 27.1553C275.671 27.2635 275.437 27.3898 275.23 27.5521L274.231 27.1463C274.185 27.129 274.134 27.1286 274.088 27.1451C274.042 27.1616 274.003 27.194 273.979 27.2365L273.169 28.6343C273.124 28.7245 273.133 28.8327 273.214 28.8958L274.069 29.5631C274.031 29.8263 274.031 30.0935 274.069 30.3567L273.214 31.024C273.142 31.0872 273.115 31.1954 273.169 31.2856L273.979 32.6834C274.024 32.7735 274.132 32.8006 274.231 32.7735L275.23 32.3677C275.437 32.5301 275.662 32.6653 275.914 32.7645L276.067 33.8287C276.085 33.9279 276.166 34 276.265 34H277.876C277.975 34 278.065 33.9279 278.074 33.8287L278.227 32.7645C278.47 32.6563 278.704 32.5301 278.902 32.3677L279.91 32.7735C280 32.8096 280.108 32.7735 280.162 32.6834L280.971 31.2856C281.025 31.2044 280.998 31.0962 280.926 31.0331V31.0331ZM277.066 31.1774C276.743 31.1772 276.434 31.0488 276.206 30.8203C275.978 30.5918 275.85 30.282 275.851 29.959C275.851 29.636 275.979 29.3263 276.207 29.098C276.435 28.8697 276.744 28.7415 277.066 28.7416C277.389 28.7417 277.698 28.8701 277.926 29.0986C278.154 29.3271 278.282 29.6369 278.281 29.9599C278.281 30.2829 278.153 30.5927 277.925 30.821C277.697 31.0493 277.388 31.1775 277.066 31.1774V31.1774Z" fill="#ffffff"/>
+                                                        </svg>
+                                                    </a>
+                                                    <p>خدماتي</p>
+                                                </div>
+                                                <div class="col-4 text-right">
+                                                    <a href="#" onclick="openTab(event, 'my_address')">
+                                                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <rect width="50" height="50" rx="25" fill="#F7F7F7"/>
+                                                            <path d="M25 34.0035C23.7369 32.9261 22.5662 31.745 21.5 30.4725C19.9 28.5615 18 25.7155 18 23.0035C17.9993 21.6185 18.4095 20.2644 19.1787 19.1125C19.9479 17.9607 21.0415 17.063 22.3211 16.5329C23.6007 16.0028 25.0087 15.8643 26.3671 16.1348C27.7255 16.4053 28.9731 17.0727 29.952 18.0525C30.6038 18.7014 31.1203 19.473 31.4719 20.3229C31.8234 21.1727 32.0029 22.0838 32 23.0035C32 25.7155 30.1 28.5615 28.5 30.4725C27.4338 31.745 26.2631 32.9261 25 34.0035ZM25 20.0035C24.2044 20.0035 23.4413 20.3196 22.8787 20.8822C22.3161 21.4448 22 22.2079 22 23.0035C22 23.7992 22.3161 24.5622 22.8787 25.1248C23.4413 25.6874 24.2044 26.0035 25 26.0035C25.7957 26.0035 26.5587 25.6874 27.1213 25.1248C27.6839 24.5622 28 23.7992 28 23.0035C28 22.2079 27.6839 21.4448 27.1213 20.8822C26.5587 20.3196 25.7957 20.0035 25 20.0035Z" fill="#606E7D"/>
+                                                        </svg>
+                                                    </a>
+                                                    <p>عنواني</p>
+                                                </div>
+                                            </div>
+                                            <div class="row pt-2">
+                                                <div class="col-12">
+                                                <h5>اضافة الخدمات</h5>
+                                                </div>
+                                                <div class="col-12">
+                                                    <select class="form-control">
+                                                        <option value="">كل الخدمات</option>
+                                                        <option value="">خدمة1</option>
+                                                        <option value="">خدمة2</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row pt-2 text-right">
+                                                <div class="parent col-12">
+                                                <div class="form-group col-md-12">
+                                                    <h6 class="pt-3">قطاع النقل </h6>
+                                                </div>
+                                                    <div class="child form-group col-md-12">
+                                                        <div class="form-group col-md-12">
+                                                            <input type="checkbox" id="sub_category1" name="sub_categories[]" value="1" onclick="ParentCheck(1)" class="sub_category">
+                                                            <label for="sub_category1">نقل سياره داخل المدينة </label>
+                                                        </div>
+                                                        <div class="form-group col-md-12 pr-5">
+                                                            <input type="checkbox" id="service1" name="services[]" value="1" onclick="TriggerParentCheck(1,1)" data-parent="1" class="sub_category service_1">
+                                                            <label for="service1">سطحة دينا</label>
+                                                        </div>
+                                                        <div class="form-group col-md-12 pr-5">
+                                                            <input type="checkbox" id="service2" name="services[]" value="2" onclick="TriggerParentCheck(1,2)" data-parent="1" class="sub_category service_1">
+                                                            <label for="service2">سطحة دينا هيدرولك</label>
+                                                        </div>
+                                                        <div class="form-group col-md-12 pr-5">
+                                                            <input type="checkbox" id="service3" name="services[]" value="3" onclick="TriggerParentCheck(1,3)" data-parent="1" class="sub_category service_1">
+                                                            <label for="service3">سطحة لوري </label>
+                                                        </div>
+                                                        <div class="form-group col-md-12 pr-5">
+                                                            <input type="checkbox" id="service4" name="services[]" value="4" onclick="TriggerParentCheck(1,4)" data-parent="1" class="sub_category service_1">
+                                                            <label for="service4">سطحة سيكس </label>
+                                                        </div>
+                                                        <div class="form-group col-md-12 pr-5">
+                                                            <input type="checkbox" id="service5" name="services[]" value="5" onclick="TriggerParentCheck(1,5)" data-parent="1" class="sub_category service_1">
+                                                            <label for="service5">نقل ضمن احد الناقل بين المدن </label>
+                                                        </div>
+                                                    </div>
+                                                    <hr/>
+                                                    <div class="child form-group col-md-12">
+                                                        <div class="form-group col-md-12">
+                                                            <input type="checkbox" id="sub_category2" name="sub_categories[]" value="2" onclick="ParentCheck(2)" class="sub_category">
+                                                            <label for="sub_category2">نقل سياره داخل المدينة </label>
+                                                        </div>
+                                                        <div class="form-group col-md-12 pr-5">
+                                                            <input type="checkbox" id="service6" name="services[]" value="6" onclick="TriggerParentCheck(1,6)" data-parent="1" class="sub_category service_2">
+                                                            <label for="service6">سطحة دينا</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 text-right">
+                                                    <button type="button" class="btn logged_btn" onclick="openTab(event, 'my_address')">التالي
+                                                        <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16 5C16 4.85268 15.9398 4.71139 15.8326 4.60722C15.7255 4.50305 15.5802 4.44452 15.4286 4.44452L1.95175 4.44452L5.5481 0.949458C5.65539 0.845155 5.71566 0.703687 5.71566 0.55618C5.71566 0.408672 5.65539 0.267206 5.5481 0.162902C5.4408 0.0585983 5.29528 7.3311e-07 5.14355 7.3943e-07C4.99182 7.4575e-07 4.8463 0.0585983 4.739 0.162902L0.167868 4.60672C0.114656 4.65832 0.0724382 4.71962 0.0436327 4.7871C0.0148272 4.85459 -2.32709e-07 4.92694 -2.29358e-07 5C-2.26006e-07 5.07307 0.0148272 5.14541 0.0436327 5.2129C0.0724382 5.28038 0.114656 5.34168 0.167868 5.39328L4.739 9.8371C4.79213 9.88874 4.8552 9.92971 4.92461 9.95766C4.99402 9.98561 5.06842 10 5.14355 10C5.29528 10 5.4408 9.9414 5.5481 9.8371C5.65539 9.73279 5.71566 9.59133 5.71566 9.44382C5.71566 9.29631 5.65539 9.15485 5.5481 9.05054L1.95175 5.55548L15.4286 5.55548C15.5802 5.55548 15.7255 5.49695 15.8326 5.39278C15.9398 5.28861 16 5.14732 16 5Z" fill="#ffffff"/>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                            <div style="display: none" id="my_address" class="col-12 text-center tabcontent" role="tabpanel" aria-labelledby="pills-address-tab">
+                                <h2 class="text-right">انضم الينا</h2>
+                                <p class="text-right">انشأ حسابك الان لتتمكن من تقديم خدماتك</p>
+
+                                <form class="registerForm p-3" id="addressForm" action="" method="">
+                                    <div class="row pt-2">
+                                        <div class="col-4 text-right">
+                                            <a href="#" onclick="openTab(event, 'profile')">
+                                                <svg width="297" height="50" viewBox="0 0 200 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <line x1="200" y1="25.5" x2="-5.96046e-07" y2="25.5" stroke="#272265"/>
+                                                    <rect x="150.5" y="0.5" width="49" height="49" rx="24.5" fill="#272265" stroke="#272265"/>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M170.15 20.25C170.15 17.3505 172.5 15 175.4 15C178.299 15 180.65 17.3505 180.65 20.25C180.65 23.1495 178.299 25.5 175.4 25.5C172.5 25.5 170.15 23.1495 170.15 20.25ZM167 32.75C167 29.8505 169.351 27.5 172.25 27.5H178.55C181.449 27.5 183.8 29.8505 183.8 32.75C183.8 34.4897 182.39 35.9 180.65 35.9H170.15C168.41 35.9 167 34.4897 167 32.75Z" fill="white"/>
+                                                </svg>
+                                            </a>
+                                            <p>بياناتي</p>
+                                        </div>
+                                        <div class="col-4 text-right">
+                                            <a href="#" onclick="openTab(event, 'services')">
+                                                <svg width="297" height="50" viewBox="0 0 297 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <line x1="246" y1="25.5" x2="-5.96046e-07" y2="25.5" stroke="#272265"/>
+                                                    <rect x="247" width="50" height="50" rx="25" fill="#272265"/>
+                                                    <path d="M273.952 26.5601L275.212 24.3778C275.293 24.2425 275.257 24.0711 275.14 23.9719L273.808 22.9259C273.835 22.7275 273.853 22.52 273.853 22.3126C273.853 22.1052 273.835 21.8978 273.808 21.6904L275.14 20.6443C275.257 20.5451 275.293 20.3737 275.212 20.2385L273.952 18.0561C273.871 17.9208 273.709 17.8667 273.565 17.9208L271.999 18.5521C271.675 18.2996 271.324 18.0922 270.937 17.9299L270.703 16.2615C270.688 16.1886 270.648 16.123 270.591 16.0754C270.534 16.0279 270.462 16.0013 270.388 16H267.868C267.715 16 267.58 16.1172 267.553 16.2705L267.319 17.9389C266.941 18.1012 266.581 18.3086 266.257 18.5611L264.691 17.9299C264.547 17.8758 264.385 17.9299 264.304 18.0651L263.044 20.2475C262.963 20.3828 262.999 20.5541 263.116 20.6533L264.448 21.6994C264.421 21.8978 264.403 22.1052 264.403 22.3126C264.403 22.52 264.421 22.7275 264.448 22.9349L263.116 23.981C262.999 24.0802 262.963 24.2515 263.044 24.3868L264.304 26.5691C264.385 26.7044 264.547 26.7585 264.691 26.7044L266.257 26.0731C266.581 26.3257 266.932 26.5331 267.319 26.6954L267.553 28.3637C267.58 28.508 267.715 28.6253 267.868 28.6253H270.388C270.541 28.6253 270.676 28.508 270.703 28.3547L270.937 26.6864C271.315 26.524 271.675 26.3166 271.999 26.0641L273.565 26.6954C273.709 26.7495 273.871 26.6954 273.952 26.5601V26.5601ZM269.128 24.1162C268.138 24.1162 267.328 23.3046 267.328 22.3126C267.328 21.3206 268.138 20.509 269.128 20.509C270.118 20.509 270.928 21.3206 270.928 22.3126C270.928 23.3046 270.118 24.1162 269.128 24.1162ZM280.926 31.0331L280.063 30.3657C280.081 30.2395 280.099 30.1042 280.099 29.9689C280.099 29.8337 280.09 29.6984 280.063 29.5721L280.917 28.9048C280.989 28.8417 281.016 28.7335 280.962 28.6433L280.153 27.2455C280.108 27.1553 280 27.1283 279.901 27.1553L278.902 27.5611C278.695 27.3988 278.47 27.2635 278.218 27.1643L278.065 26.1002C278.061 26.052 278.04 26.0068 278.005 25.9735C277.97 25.9402 277.924 25.9211 277.876 25.9198H276.265C276.166 25.9198 276.076 25.992 276.067 26.0912L275.914 27.1553C275.671 27.2635 275.437 27.3898 275.23 27.5521L274.231 27.1463C274.185 27.129 274.134 27.1286 274.088 27.1451C274.042 27.1616 274.003 27.194 273.979 27.2365L273.169 28.6343C273.124 28.7245 273.133 28.8327 273.214 28.8958L274.069 29.5631C274.031 29.8263 274.031 30.0935 274.069 30.3567L273.214 31.024C273.142 31.0872 273.115 31.1954 273.169 31.2856L273.979 32.6834C274.024 32.7735 274.132 32.8006 274.231 32.7735L275.23 32.3677C275.437 32.5301 275.662 32.6653 275.914 32.7645L276.067 33.8287C276.085 33.9279 276.166 34 276.265 34H277.876C277.975 34 278.065 33.9279 278.074 33.8287L278.227 32.7645C278.47 32.6563 278.704 32.5301 278.902 32.3677L279.91 32.7735C280 32.8096 280.108 32.7735 280.162 32.6834L280.971 31.2856C281.025 31.2044 280.998 31.0962 280.926 31.0331V31.0331ZM277.066 31.1774C276.743 31.1772 276.434 31.0488 276.206 30.8203C275.978 30.5918 275.85 30.282 275.851 29.959C275.851 29.636 275.979 29.3263 276.207 29.098C276.435 28.8697 276.744 28.7415 277.066 28.7416C277.389 28.7417 277.698 28.8701 277.926 29.0986C278.154 29.3271 278.282 29.6369 278.281 29.9599C278.281 30.2829 278.153 30.5927 277.925 30.821C277.697 31.0493 277.388 31.1775 277.066 31.1774V31.1774Z" fill="#ffffff"/>
+                                                </svg>
+                                            </a>
+                                            <p>خدماتي</p>
+                                        </div>
+                                        <div class="col-4 text-right">
+                                            <a href="#" onclick="openTab(event, 'my_address')">
+                                                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect width="50" height="50" rx="25" fill="#272265"/>
+                                                    <path d="M25 34.0035C23.7369 32.9261 22.5662 31.745 21.5 30.4725C19.9 28.5615 18 25.7155 18 23.0035C17.9993 21.6185 18.4095 20.2644 19.1787 19.1125C19.9479 17.9607 21.0415 17.063 22.3211 16.5329C23.6007 16.0028 25.0087 15.8643 26.3671 16.1348C27.7255 16.4053 28.9731 17.0727 29.952 18.0525C30.6038 18.7014 31.1203 19.473 31.4719 20.3229C31.8234 21.1727 32.0029 22.0838 32 23.0035C32 25.7155 30.1 28.5615 28.5 30.4725C27.4338 31.745 26.2631 32.9261 25 34.0035ZM25 20.0035C24.2044 20.0035 23.4413 20.3196 22.8787 20.8822C22.3161 21.4448 22 22.2079 22 23.0035C22 23.7992 22.3161 24.5622 22.8787 25.1248C23.4413 25.6874 24.2044 26.0035 25 26.0035C25.7957 26.0035 26.5587 25.6874 27.1213 25.1248C27.6839 24.5622 28 23.7992 28 23.0035C28 22.2079 27.6839 21.4448 27.1213 20.8822C26.5587 20.3196 25.7957 20.0035 25 20.0035Z" fill="#ffffff"/>
+                                                </svg>
+                                            </a>
+                                            <p>عنواني</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row pt-2">
+                                        <div class="col-3"></div>
+                                        <div class="col-6">
+                                            <ul class="nav nav-pills register_user_type" id="addresses_type" role="tablist">
+                                                <li class="nav-item col-6">
+                                                    <input type="radio" name="user_type" value="1" id="addresses_type1" hidden>
+                                                    <a class="nav-link active" id="pills-manual-tab" data-toggle="pill" href="#manual" role="tab" aria-controls="pills-manual" aria-selected="true">يدوي</a>
+                                                </li>
+                                                <li class="nav-item col-6">
+                                                    <input type="radio" name="user_type" value="2" id="addresses_type2" hidden>
+                                                    <a class="nav-link" id="pills-map-tab" data-toggle="pill" href="#map" role="tab" aria-controls="pills-map" aria-selected="false">خريطة</a>
+                                                </li>
+                                            </ul>                                        </div>
+                                        <div class="col-3"></div>
+                                    </div>
+                                    <div class="tab-content tab" id="pills-tabContent2">
+                                        <div id="manual" class="tab-pane fade show active details mb-2" role="tabpanel" aria-labelledby="pills-manual-tab">
+                                            <div class="row pt-5">
+                                                <div class="col-6 text-right">
+                                                    <label for="city_id">
+                                                        اسم المدينة
+                                                    </label>
+                                                </div>
+                                                <div class="col-6 text-right">
+                                                    <label for="branch_name">اسم الفرع</label>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-5">
+                                                <div class="col-6 text-right">
+                                                    <select id="city_id" class="form-control">
+                                                        <option value="1">الرياض</option>
+                                                        <option value="2">جدة</option>
+                                                        <option value="3">المدينة المنورة</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-6 text-right">
+                                                    <input type="text" class="form-control" name="branch_name" id="branch_name" placeholder="أدخل اسم الفرع">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="map" class="tab-pane fade details mb-2" role="tabpanel" aria-labelledby="pills-mao-tab">
+                                            <div class="row mt-3">
+                                                <div class="col-6">
+                                                    <form action="" class="saveMapAddress">
+                                                        <div class="col-12 w-100 pb-3 pr-3 pt-3 mt-0 text-right address">
+                                                            <i class="fa-solid fa-location-crosshairs"></i>
+                                                            <span class="pr-2">367 طريق العروبة، الورود، 12215 الرياض، السعودية</span>
+                                                        </div>
+                                                        <div class="col-12 w-100 pb-3 pr-3 pt-3 mt-0 text-right">
+                                                            <label for="branch_name1" class="font-gray">اسم الفرع</label>
+                                                        </div>
+                                                        <div class="col-12 w-100 pb-3 pr-3 pt-3 mt-0 text-right">
+                                                            <input type="text" placeholder="ادخال اسم الفرع" id="branch_name1" name="branch_name" class="form-control bg-light">
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="mapouter10">
+                                                        <div class="gmap_canvas1">
+                                                            <iframe src="https://maps.google.com/maps?q=reyadh&amp;t=k&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" id="gmap_canvas1" frameborder="0" scrolling="no" style="width: 350px; height: 330px;"></iframe>
+                                                            <a href="https://blooket.app/login" style="display:none">blooket login</a>
+                                                            <style>
+                                                                .mapouter10{position:relative;text-align:right;height:330px;width:350px;}
+                                                            </style>
+                                                            <style>.gmap_canvas1{overflow:hidden;background:none!important;height:330px;width:350px;}</style>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <hr/>
+                                        <div class="row">
+                                            <div class="col-12 text-right">
+                                                <button type="submit" class="btn logged_btn">تأكيد الموقع
+                                                    <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16 5C16 4.85268 15.9398 4.71139 15.8326 4.60722C15.7255 4.50305 15.5802 4.44452 15.4286 4.44452L1.95175 4.44452L5.5481 0.949458C5.65539 0.845155 5.71566 0.703687 5.71566 0.55618C5.71566 0.408672 5.65539 0.267206 5.5481 0.162902C5.4408 0.0585983 5.29528 7.3311e-07 5.14355 7.3943e-07C4.99182 7.4575e-07 4.8463 0.0585983 4.739 0.162902L0.167868 4.60672C0.114656 4.65832 0.0724382 4.71962 0.0436327 4.7871C0.0148272 4.85459 -2.32709e-07 4.92694 -2.29358e-07 5C-2.26006e-07 5.07307 0.0148272 5.14541 0.0436327 5.2129C0.0724382 5.28038 0.114656 5.34168 0.167868 5.39328L4.739 9.8371C4.79213 9.88874 4.8552 9.92971 4.92461 9.95766C4.99402 9.98561 5.06842 10 5.14355 10C5.29528 10 5.4408 9.9414 5.5481 9.8371C5.65539 9.73279 5.71566 9.59133 5.71566 9.44382C5.71566 9.29631 5.65539 9.15485 5.5481 9.05054L1.95175 5.55548L15.4286 5.55548C15.5802 5.55548 15.7255 5.49695 15.8326 5.39278C15.9398 5.28861 16 5.14732 16 5Z" fill="#606E7D"/>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<section class="hero">
+    <div class="container">
+        <div class="row">
+        <div class="col-md-12 col-lg-6 text-right pt-5 hero-content float-right">
+            <h2 data-aos="zoom-in" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000">مع شامل</h2>
+            <p data-aos="zoom-in" data-aos-offset="200" data-aos-delay="100" data-aos-duration="1000">اطلب خدمتك بأسرع وقت مع أكبر فريق محترف يلبي احتياجك ، وتنظيم طلباتك بكل سهولة وأمان أكيد مع .. شامل.</p>
+            <form data-aos="zoom-in" data-aos-offset="200" data-aos-delay="150" data-aos-duration="500" class="search-form" action="" method="">
+                <input type="text" class="form-control search-input fontawesome" placeholder="&#xF002; ابحث عن اسم الخدمة ">
+            </form>
+        </div>
+        <div class="col-md-12 col-lg-6 pt-5 float-left">
+            <img src="../assets/img/hero.png" data-aos="fade-up"
+                 data-aos-offset="200"
+                 data-aos-delay="50"
+                 data-aos-duration="1000"
+                 data-aos-easing="ease-in-out"
+                 data-aos-mirror="true"
+                 data-aos-once="false"
+                 data-aos-anchor-placement="top-center">
+        </div>
+        <div class="clearfix"></div>
+        </div>
+    </div>
+</section>
+<section class="second">
+        <div class="shape"></div>
+    <img src="../assets/img/Group%202106.png" data-aos="fade-up"
+         data-aos-offset="100"
+         data-aos-delay="50"
+         data-aos-duration="1000"
+         data-aos-easing="ease-in-out"
+         data-aos-mirror="true"
+         data-aos-once="false"
+         data-aos-anchor-placement="top-center">
+    <div class="col-6 float-right">
+    </div>
+    <div class="col-6 float-left second-content">
+        <h2 class="white">شامل لراحتك</h2>
+        <p class="white">اطلب من جميع أنواع مزودين الخدمات في كل مكان  من داخل مدينتك بأسرع وقت وبشكل آمن.</p>
+        <a href="#" class="service-btn mt-5">اطلب الخدمة <i class="fa-sharp fa-solid fa-arrow-left"></i></a>
+    </div>
+    <div class="clearfix"></div>
+</section>
+<section class="services">
+    <div class="container">
+            <h2 class="text-right pb-5"> خدماتنا<span class="yellow f-16">الأكثر طلبا</span> </h2>
+            <p class="text-right w-50">نقدم لكم العديد العديد من الخدمات التي توفر عليك الوقت والميزانية بشكل منظم في تطبيق موحد.</p>
+
+        <div class="row mb-5 services-grid">
+            <div class="bg-light p-5 text-center service-item">
+                <img src="../assets/img/Group%201650.png">
+                <p>خدمات البناء</p>
+            </div>
+            <div class="bg-light p-5 text-center service-item">
+                <img src="../assets/img/Group.png">
+                <p>الحج والعمرة</p>
+            </div>
+            <div class="bg-light p-6 text-center service-item">
+                <img src="../assets/img/Group%201651.png">
+                <p>خدمات النقل</p>
+            </div>
+            <div class="text-center service-item">
+                <div class="bg-light p-4 mb-2 text-center service-item-child">
+                <img src="../assets/img/Group%201655.png">
+                <p>صيانة المركبات</p>
+                </div>
+                <div class="bg-light p-3 mb-3 text-center service-item-child">
+                        <img src="../assets/img/Group%201652.png">
+                        <p>تأجير سيارات</p>
+                    </div>
+            </div>
+            <div class="text-center service-item">
+                <div class="bg-light p-5 mb-2 text-center service-item-child">
+                    <img src="../assets/img/Group%20(1).png">
+                    <p>خدمات المياه</p>
+                </div>
+                <div class="bg-light p-2 mb-2 text-center service-item-child">
+                    <a href="#" class="more-services">المزيد...</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="testimonial">
+    <div class="container">
+    <div class="col-6 float-right text-right testimonial-content">
+        <h2>قالوا عنا</h2>
+        <p class="pt-5">نعتز دائما بالتغذية الراجعة من عملائنا الأعزاء وهذا مما يزيدنا ابداع أكثر فأكثر في تلبية طلباتكم، شكرا لانكم أصبحتم جزء من عائلتنا.</p>
+    </div>
+    <div class="col-6 float-left text-right testimonial-swiper">
+<!--        <div class="testimonial-item active" data-aos="fade-in"-->
+<!--             data-aos-offset="100"-->
+<!--             data-aos-delay="50"-->
+<!--             data-aos-duration="1000"-->
+<!--             data-aos-easing="ease-in-out"-->
+<!--             data-aos-mirror="true"-->
+<!--             data-aos-once="false"-->
+<!--             data-aos-anchor-placement="top-center">-->
+<!--            <div class="row">-->
+<!--            <div class="col-6 float-right">-->
+<!--                <img src="assets/img/Avatar-12.png">-->
+<!--                <h6>هديل مكي</h6>-->
+<!--            </div>-->
+<!--            <div class="col-6 float-right text-left">-->
+<!--                <span>-->
+<!--                    <span class="p-3 right-btn"><i class="fa-sharp fa-solid fa-arrow-right blue"></i></span>-->
+<!--                    <span class="p-3 left-btn" id="left-btn" onclick="testimonials()"><i class="fa-sharp fa-solid fa-arrow-left blue"></i></span>-->
+<!--                </span>-->
+<!--            </div>-->
+<!--            <div class="clearfix"></div>-->
+<!--            </div>-->
+<!--            <div class="col-12">-->
+<!--                <p class="pt-5 w-100 text-center">الموقع سريع ومتجاوب بشكل كبير ، والتقنيين اشخاص محترفين  ،اتمنى لكم-->
+<!--                    المزيد من التقدم والابداع دائما وابدا ...  شكرا لكم </p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="testimonial-item" data-aos="fade-in"-->
+<!--             data-aos-offset="100"-->
+<!--             data-aos-delay="50"-->
+<!--             data-aos-duration="1000"-->
+<!--             data-aos-easing="ease-in-out"-->
+<!--             data-aos-mirror="true"-->
+<!--             data-aos-once="false"-->
+<!--             data-aos-anchor-placement="top-center">-->
+<!--            <div class="row">-->
+<!--                <div class="col-6 float-right">-->
+<!--                    <img src="assets/img/Avatar-12.png">-->
+<!--                    <h6>صلاح خطاب</h6>-->
+<!--                </div>-->
+<!--                <div class="col-6 float-right text-left">-->
+<!--                <span>-->
+<!--                    <span class="p-3 right-btn"><i class="fa-sharp fa-solid fa-arrow-right blue"></i></span>-->
+<!--                    <span class="p-3 left-btn"><i class="fa-sharp fa-solid fa-arrow-left blue"></i></span>-->
+<!--                </span>-->
+<!--                </div>-->
+<!--                <div class="clearfix"></div>-->
+<!--            </div>-->
+<!--            <div class="col-12">-->
+<!--                <p class="pt-5 w-100 text-center">الموقع سريع ومتجاوب بشكل كبير ، والتقنيين اشخاص محترفين  ،اتمنى لكم-->
+<!--                    المزيد من التقدم والابداع دائما وابدا ...  شكرا لكم </p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="testimonial-item" data-aos="fade-in"-->
+<!--             data-aos-offset="100"-->
+<!--             data-aos-delay="50"-->
+<!--             data-aos-duration="1000"-->
+<!--             data-aos-easing="ease-in-out"-->
+<!--             data-aos-mirror="true"-->
+<!--             data-aos-once="false"-->
+<!--             data-aos-anchor-placement="top-center">-->
+<!--            <div class="row">-->
+<!--                <div class="col-6 float-right">-->
+<!--                    <img src="assets/img/Avatar-12.png">-->
+<!--                    <h6>أحمد الشرفا</h6>-->
+<!--                </div>-->
+<!--                <div class="col-6 float-right text-left">-->
+<!--                <span>-->
+<!--                    <span class="p-3 right-btn"><i class="fa-sharp fa-solid fa-arrow-right blue"></i></span>-->
+<!--                    <span class="p-3 left-btn"><i class="fa-sharp fa-solid fa-arrow-left blue"></i></span>-->
+<!--                </span>-->
+<!--                </div>-->
+<!--                <div class="clearfix"></div>-->
+<!--            </div>-->
+<!--            <div class="col-12">-->
+<!--                <p class="pt-5 w-100 text-center">الموقع سريع ومتجاوب بشكل كبير ، والتقنيين اشخاص محترفين  ،اتمنى لكم-->
+<!--                    المزيد من التقدم والابداع دائما وابدا ...  شكرا لكم </p>-->
+<!--            </div>-->
+<!--        </div>-->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide testimonial-item">
+                    <div class="row">
+                        <div class="col-12 pr-4">
+                            <img src="../assets/img/Avatar-12.png">
+                            <h6>هديل مكي</h6>
+                        </div>
+                        <div class="col-12">
+                            <p class="pt-2 w-100 text-center swiper-content">الموقع سريع ومتجاوب بشكل كبير ، والتقنيين اشخاص محترفين  ،اتمنى لكم
+                                المزيد من التقدم والابداع دائما وابدا ...  شكرا لكم </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide testimonial-item">
+                    <div class="row">
+                        <div class="col-12 pr-4">
+                            <img src="../assets/img/Avatar-12.png">
+                            <h6>هديل مكي</h6>
+                        </div>
+                        <div class="col-12">
+                            <p class="pt-2 w-100 text-center swiper-content">الموقع سريع ومتجاوب بشكل كبير ، والتقنيين اشخاص محترفين  ،اتمنى لكم
+                                المزيد من التقدم والابداع دائما وابدا ...  شكرا لكم </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide testimonial-item">
+                    <div class="row">
+                        <div class="col-12 pr-3">
+                            <img src="../assets/img/Avatar-12.png">
+                            <h6>هديل مكي</h6>
+                        </div>
+                        <div class="col-12">
+                            <p class="pt-2 w-100 text-center swiper-content">الموقع سريع ومتجاوب بشكل كبير ، والتقنيين اشخاص محترفين  ،اتمنى لكم
+                                المزيد من التقدم والابداع دائما وابدا ...  شكرا لكم </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide testimonial-item">
+                    <div class="row">
+                        <div class="col-12 pr-3">
+                            <img src="../assets/img/Avatar-12.png">
+                            <h6>هديل مكي</h6>
+                        </div>
+                        <div class="col-12">
+                            <p class="pt-2 w-100 text-center swiper-content">الموقع سريع ومتجاوب بشكل كبير ، والتقنيين اشخاص محترفين  ،اتمنى لكم
+                                المزيد من التقدم والابداع دائما وابدا ...  شكرا لكم </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide testimonial-item">
+                    <div class="row">
+                        <div class="col-12 pr-3">
+                            <img src="../assets/img/Avatar-12.png">
+                            <h6>هديل مكي</h6>
+                        </div>
+                        <div class="col-12">
+                            <p class="pt-2 w-100 text-center swiper-content">الموقع سريع ومتجاوب بشكل كبير ، والتقنيين اشخاص محترفين  ،اتمنى لكم
+                                المزيد من التقدم والابداع دائما وابدا ...  شكرا لكم </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    </div>
+</section>
+<section class="application">
+    <div class="application-shape"></div>
+    <img src="../assets/img/iPhone%2014%20Pro%20PSD%20Mockup%201.png" data-aos="fade-up"
+         data-aos-offset="100"
+         data-aos-delay="50"
+         data-aos-duration="1000"
+         data-aos-easing="ease-in-out"
+         data-aos-mirror="true"
+         data-aos-once="false"
+         data-aos-anchor-placement="top-center">
+    <div class="col-6 float-right">
+    </div>
+    <div class="col-6 float-left second-content mt-5">
+        <h2 class="white">تطبيق شامل</h2>
+        <p class="white mt-4">لاننا نهتم بالتسهيل على عملاؤنا قم بانشاء تطبيق شامل للموبايل للسرعة في طلب خدماتك من اي مكان تكن به عبر موبايلك </p>
+        <div class="row">
+            <img class="apple" src="../assets/img/Badge.png">
+            <img class="android" src="../assets/img/Badge%20(1).png">
+        </div>
+    </div>
+    <div class="clearfix"></div>
+</section>
+<div class="footer mt-0 mb-0" style="box-shadow: unset">
+    <div class="container">
+        <div class="row">
+            <img src="../assets/img/logo.png" width="170px" height="60px">
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-12 text-center text-lg-right">
+                <p class="text-right pt-5">موقع وتطبيق شامل ، لتسهيل طلب خدماتك باسرع وقت ممكن مع اقوى التقنيين بشكل آمن ومنظم.</p>
+
+                <div class="row mt-5">
+                    <div class="col-12 text-right">
+                        <a href="#">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-square-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 text-center text-lg-right">
+                <ul class="footer-list">
+                    <li>
+                        <a href="services.html">الخدمات</a>
+                        </li>
+                    <li>
+                        <a href="about.html">من نحن</a>
+                    </li>
+                    <li>
+                        <a href="Faqs.html">الأسئلة الشائعة</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-sm-6 text-center text-lg-right">
+                <ul class="footer-list">
+                    <li>
+                        <a href="privacy.html">سياسة الخصوصية</a>
+                        </li>
+                    <li>
+                        <a href="return_policy.html"> سياسة الترجيع</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Popper.JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/6.4.1/js/intlTelInput.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "cards",
+        grabCursor: true,
+      });
+    </script>
+<script>
+$("#mobile-number").intlTelInput();
+  AOS.init();
+</script>
+<script>
+    function openTab(evt, tabName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+<script>
+        function ParentCheck(id){
+            let main_permission = document.getElementById('sub_category'+id);
+            let permissionEls = document.getElementsByClassName('service_'+id);
+            let flag = true;
+            for (let p = 0;p<permissionEls.length;p++){
+                permissionEls[p].checked = !!main_permission.checked;
+            }
+        }
+        function TriggerParentCheck(id,id2){
+            let main_permission = document.getElementById('sub_category'+id);
+            let sub_permission = document.getElementById('service'+id2);
+            if (sub_permission.checked){
+                main_permission.checked = true;
+            }
+            if (sub_permission.checked == false){
+                main_permission.checked = false;
+            }
+        }
+    </script>
+</body>
+<footer>
+    <div class="container">
+<div class="row">
+    <div class="col-12">
+        <p class="text-center font-12">@ 2022 جميع الحقوق محفوظة - موقع شامل للخدمات</p>
+    </div>
+</div>
+    </div>
+</footer>
+</html>
