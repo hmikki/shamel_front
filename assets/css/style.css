@@ -1129,6 +1129,7 @@ form#payments input[type="tel"]{
     border-radius: 10px;
     padding: 0px !important;
     height: 55px;
+    box-shadow: none;
 }
 .lang_type.nav-pills .nav-item{
     padding: 10px;
@@ -1219,7 +1220,7 @@ form#payments input[type="tel"]{
     border-radius: 10px;
 }
 .category_hint{
-    background: #F8F8F8;
+    /*background: #F8F8F8;*/
     border-radius: 15px;
     padding: 5px;
 }
@@ -1245,4 +1246,119 @@ form#payments input[type="tel"]{
 }
 .modal{
     overflow-y: scroll;
+}
+.height-10{
+    height: 10rem !important;
+}
+.bg-base{
+    background: #272265 !important;
+}
+.font-white{
+    color: white !important;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #272265;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #272265;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+.bg-radius{
+    border-radius: 10px;
+}
+.bg-dark-yellow{
+    background: #F3AD39 !important;
+}
+.services-spans{
+}
+.services-spans div{
+    display: inline;
+    border-radius: 25px;
+    width: 30%;
+}
+.height-auto{
+    height: auto !important;
+}
+.add_service_btn, .add_service_btn:hover, .add_service_btn:active{
+    background: #272265;
+    border-radius: 11px;
+    color: white;
+    width: 340px;
+    height: 50px;
+}
+.w-12{
+    width: 12rem;
+}
+.add_field{
+    border: 1px solid #272265;
+    border-radius: 55px;
+    color: #272265;
+}
+.add_field:hover, .add_field:active,
+.submit_btn:hover, .submit_btn:active{
+    color: white;
+}
+.submit_btn{
+    background: #272265;
+    border: 1px solid #272265;
+    border-radius: 100px;
+    color: white;
+    padding: 10px 50px;
+}
+.add_image{
+    border: 1px solid #606E7D;
+    border-radius: 55px;
+    color: #606E7D;
 }
